@@ -1,0 +1,130 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El codigo — Mopi Ranger (Konami, 1985)</title>
+<style>
+:root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
+  --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+@media (prefers-color-scheme:light){:root{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;
+  --panel:#f7f6f2;--linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}}
+:root[data-theme="dark"]{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;
+  --linea:#23262e;--rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+:root[data-theme="light"]{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;--panel:#f7f6f2;
+  --linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);padding:0 1.25rem 6rem;
+  font:15px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.w{max-width:1120px;margin:0 auto}
+.n{max-width:68ch}
+h1,h2,h3,h4{font-weight:400;text-wrap:balance}
+a{color:var(--cyan)}
+img{image-rendering:pixelated;max-width:100%;height:auto;display:block}
+header.top{display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+  padding:4rem 0 2rem;text-align:center}
+header.top img{width:min(100%,642px)}
+.claim{max-width:60ch;color:var(--suave);font-size:1.05rem}
+.claim b{color:var(--tinta);font-weight:400}
+.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:0 1.5rem;width:100%;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:.85rem 0}
+.ficha b{color:var(--rojo);font-weight:400}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;padding:1.25rem 0;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--suave);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus{color:var(--tinta);border-bottom-color:var(--rojo)}
+nav.docs{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+  margin-bottom:1rem}
+section{margin-top:4.5rem;scroll-margin-top:1rem}
+section>h2{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;
+  border-left:3px solid var(--rojo);padding-left:.9rem;margin:0 0 1.5rem}
+.cifras{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.cifra{background:var(--panel);padding:1.1rem}
+.cifra b{display:block;font-size:1.7rem;color:var(--oro);font-weight:400;
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.cifra span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--suave)}
+.hall{border-top:1px solid var(--linea);padding-top:1.75rem;margin-top:2.5rem}
+.hall:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.hall h3{margin:0 0 .75rem;font-size:1.15rem;color:var(--rojo)}
+.hall h4{color:var(--oro);margin:1.5rem 0 .5rem;font-size:.95rem}
+.hall p{margin:0 0 1rem}
+pre.asm{background:var(--panel);border-left:2px solid var(--verde);margin:1.25rem 0;
+  padding:1rem 1.1rem;overflow-x:auto;font-size:13px;line-height:1.6;color:var(--tinta)}
+.par{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:820px){.par{grid-template-columns:1fr 1fr}}
+.par figure{margin:0}
+table{border-collapse:collapse;width:100%;margin:1.25rem 0;font-size:13px;display:block;
+  overflow-x:auto}
+th,td{text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--linea)}
+th{color:var(--suave);font-weight:400;font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+td.num{font-variant-numeric:tabular-nums;color:var(--oro)}
+.nivel{margin-top:2rem}
+.nivel h3{margin:0 0 .9rem;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.nivel em{color:var(--cyan);font-style:normal}
+.sep{color:var(--suave);margin:0 .6rem}
+.rejilla{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.rejilla figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.rejilla figcaption{display:flex;justify-content:space-between;padding:.45rem .65rem;
+  font-size:11px;color:var(--suave);border-top:1px solid var(--linea)}
+.dir{font-variant-numeric:tabular-nums;color:var(--verde)}
+footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
+  color:var(--suave);font-size:12px}
+
+/* Aviso de trabajo en curso: tiene que verse antes que las cifras, porque un
+   100% mal leido hace mas dano que no ponerlo. */
+.aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
+  padding:1rem 1.2rem;max-width:900px;border-radius:4px}
+.aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0}
+.galeria img{width:100%;height:auto;image-rendering:pixelated;
+  border:1px solid var(--linea);border-radius:3px}
+.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
+</style>
+<div class="w"><nav class="top"><a href="index.html">Portada</a><a href="EMPEZAR.html">Empezar</a><a href="EL-JUEGO.html">El juego</a><a href="EL-CARTUCHO.html">El cartucho</a><a href="EL-CODIGO.html" style=color:var(--tinta)>El código</a><a href="HALLAZGOS.html">Hallazgos</a><a href="EN-EL-EMULADOR.html">En el emulador</a><a href="PREGUNTAS-ABIERTAS.html">Preguntas abiertas</a><a href="../THE-CODE.html" style="margin-left:auto;color:var(--oro)">English</a></nav>
+<h1 id="el-codigo">El codigo</h1>
+<p>Del cartucho, <b>7.789 bytes son codigo</b> y 8.595 datos. Son 3.802 instrucciones repartidas en 512 rutinas con nombre.</p>
+<h2 id="la-forma-del-programa">La forma del programa</h2>
+<p>Todo cuelga de la interrupcion. Cada cuadro entra por 0x4043, que lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura, y de ahi sale al reparto de escenas.</p>
+<pre><code>interrupcion (0x4043)
+  +- reparto de escenas (0x40AC), segun (0xE000)
+       +- 9 escenas: titulo, demostracion, juego, empezar zona,
+          perder vida, fin de zona, recuento, game over, espera</code></pre>
+<h2 id="el-despachador-y-por-que-las-tablas-no-se-cargan">El despachador, y por que las tablas no se cargan</h2>
+<p>El reparto por indice de todo el cartucho es esta rutina:</p>
+<pre><code>despacha_por_indice:
+    pop hl          ; la direccion de retorno: la TABLA misma
+    call 0x50F2     ; A por dos, HL += A, DE = word[HL]
+    ex de,hl
+    jp (hl)         ; y salta</code></pre>
+<p>El <code>pop hl</code> recupera la direccion de retorno, que es <b>la tabla pegada justo detras del <code>call</code></b>. Por eso las tablas de despacho de este juego no se cargan en ningun registro: se escriben en linea, en el hueco entre el <code>call</code> y el codigo siguiente.</p>
+<p>Para el desensamblado eso importa: un <code>jp (hl)</code> no se puede seguir estaticamente. Sin declarar esas dos tablas -la de nueve escenas de 0x40DC y la de cinco subestados de 0x4735- el trazado se queda en el <b>5,7 %</b>.</p>
+<h2 id="los-subestados-sin-tabla">Los subestados, sin tabla</h2>
+<p>Dentro de cada escena no hay tabla: hay una cadena de <code>djnz</code>.</p>
+<pre><code>escena_de_juego:
+    djnz L_41AC        ; si B != 1, al subestado siguiente
+    ...                ; subestado 1
+L_41AC:
+    ...                ; subestado 2</code></pre>
+<p>Cada <code>djnz</code> que no salta consume uno de B, asi que el codigo que queda al final es el del subestado mas alto. Para cinco o seis casos sale mas corto que una tabla, y por eso aqui no hay ninguna.</p>
+<h2 id="el-compresor-de-la-casa">El compresor de la casa</h2>
+<p>Un solo formato RLE, con dos rutinas que lo leen:</p>
+<pre><code>[control] donde el bit 7 dice literal o repeticion
+          y los otros siete, la cuenta
+[bytes]   la carga: C bytes si es literal, uno solo si se repite
+0x00      cierra</code></pre>
+<ul><li><b>0x454F</b> descomprime a la RAM. Con el se guardan los veinticinco mapas.</li><li><b>0x451F</b> hace lo mismo pero volcando al <b>puerto del VDP</b>, y admite dos controles de mas: un 0x80 abre otro destino de VRAM y un 0x00 cierra. Con el se cargan patrones y colores.</li></ul>
+<p>Ninguno lleva el tamano escrito: lo marca el 0x00 final. La forma honesta de saber donde acaba un bloque es <b>ejecutar el descompresor</b>, y eso es lo que hace <code>tools/rle.py</code>.</p>
+<h2 id="los-mapas-metatiles-de-2x2">Los mapas: metatiles de 2x2</h2>
+<p>Cada zona son 120 bytes descomprimidos, y <b>cada byte es un metatile</b>: un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6EF3, de cuatro bytes por entrada. El bucle de 0x64CD escribe dos celdas, suma 0x20 -una fila entera de la tabla de nombres- y escribe otras dos.</p>
+<p>Doce metatiles de ancho por diez de alto. Esas dos cifras no salen de mirar el dibujo: son el <code>cp 00ch</code> y el <code>cp 00ah</code> con los que el bucle cuenta.</p>
+<h2 id="el-movimiento-casilla-a-casilla">El movimiento, casilla a casilla</h2>
+<p>Todo lo que se mueve comparte motor. Cuando alguien se cuadra en una casilla -las dos coordenadas multiplo de ocho-, la rutina de 0x52DC <b>lee de la pantalla</b> los patrones de las casillas de alrededor y se los guarda en su bloque. Todo lo que viene despues -si puede girar, si hay suelo, si hay escalera- se contesta mirando esos bytes.</p>
+<p>Girar noventa grados exige estar cuadrado; la media vuelta se permite siempre. Y al girar, la posicion se <b>arrastra</b> al multiplo de ocho de uno en uno en el sentido de la marcha, no se redondea: por eso el giro se siente pegado a la rejilla.</p>
+<h2 id="el-sonido">El sonido</h2>
+<p>Tres canales del PSG, y los efectos llevan <b>prioridad</b>: uno nuevo no entra si lo que suena tiene un numero mayor o igual. Cada efecto ocupa dos canales, con su guion sacado de la tabla de 27 punteros de 0x7CA9.</p>
+<p>La rutina que pide un efecto guarda <b>todos</b> los registros, IX e IY incluidos, y corta las interrupciones: la llaman desde cualquier sitio del juego y el manejador tambien toca el PSG.</p>
+<h2 id="como-se-lee-este-listado">Como se lee este listado</h2>
+<p>Los nombres de rutina son descriptivos y los comentarios van anclados a direccion en <code>src/mopiranger.notes</code>, no escritos dentro del <code>.asm</code>. El listado esta comentado al <b>52,9 %</b> y no queda ninguna rutina por debajo del 10 %.</p>
+<footer><p><em>Mopi Ranger</em> lo publico Konami para MSX en 1985; su numero de catalogo es RC-728 y son 16 KB. Todos los derechos sobre el juego siguen siendo de sus titulares. Este trabajo es de preservacion, estudio y documentacion, y la imagen del cartucho no se distribuye.</p></footer></div>

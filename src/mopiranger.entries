@@ -1,0 +1,42 @@
+# Puntos de entrada de Mopi Ranger (Konami, RC-728, 1985). ROM de 16 KB en 0x4000.
+#
+# La BIOS lee la cabecera "AB" y llama a INIT tras inicializar la maquina.
+# En el volcado los bytes 0-9 son 41 42 10 40 00 00 00 00 00 00: declara SOLO
+# INIT, en 0x4010. STATEMENT, DEVICE y TEXT van a cero.
+0x4010   # INIT, declarado en la cabecera del cartucho (bytes 2-3: 10 40)
+
+# INIT engancha la interrupcion y se queda en un `jr $`: pone un 0xC3 (jp) en
+# H.KEYI (0xFD9A) y la direccion 0x4043 detras -`ld a,0c3h / ld (0fd9ah),a`
+# seguido de `ld hl,04043h / ld (0fd9bh),hl` en 0x4013-0x401D-, deja la pila en
+# 0xE400, borra 0xE000-0xE3FF con un ldir y termina en `ei / jr $` (0x4040).
+# O sea que TODO el juego cuelga de la interrupcion: sin declarar 0x4043 el
+# trazado estatico se queda en el 1,3 % (medido).
+0x4043   # manejador de la interrupcion, enganchado en H.KEYI por INIT (0x4013-0x401D)
+
+# ======================================================================
+# EL DESPACHADOR: `pop hl / call 0x50F2 / ex de,hl / jp (hl)`
+# ======================================================================
+#
+# La rutina de 0x407F es el reparto por indice de todo el cartucho, y la tabla
+# de punteros va PEGADA DETRAS del `call 0x407f` que la usa:
+#
+#     0x407F  pop hl        recupera la direccion de retorno: la tabla misma
+#     0x4080  call 0x50F2   A por dos (add a,a), HL += A (0x4075) y DE=word[HL]
+#     0x4083  ex de,hl
+#     0x4084  jp (hl)
+#
+# El trazado estatico no puede seguir un `jp (hl)`: con solo INIT y la
+# interrupcion el cartucho se queda en el 5,7 % (medido). La directiva !tabla
+# marca los bytes como datos Y mete cada puntero como punto de entrada.
+
+# El reparto de ESCENAS, llamado desde 0x40D9 con A=C=(0xE000), el estado del
+# juego. Son NUEVE y no diez: la regla de "leer palabras mientras caigan dentro
+# de la ROM" da una decima, 0x6D3A, y es falsa -esos dos bytes (3A 6D) son ya
+# el `ld a,(0e06dh)` de 0x40EE, el codigo que sigue a la tabla-.
+!tabla 0x40DC  9   # reparto de escenas, desde 0x40d9
+
+# La segunda tabla del mismo despachador, esta cargada en HL a mano: 0x472f
+# hace `ld a,h / ld hl,04735h / jp L_4080`, o sea entra al despachador por
+# 0x4080, saltandose el `pop hl`. Cinco entradas: la sexta palabra (0x163A) ya
+# no cae en la ROM, y 0x473f -su primer destino- es donde empieza el codigo.
+!tabla 0x4735  5   # cinco subestados, desde 0x472f, con el indice en H de (0xE016)

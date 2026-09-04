@@ -1,0 +1,139 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hallazgos — Mopi Ranger (Konami, 1985)</title>
+<style>
+:root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
+  --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+@media (prefers-color-scheme:light){:root{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;
+  --panel:#f7f6f2;--linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}}
+:root[data-theme="dark"]{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;
+  --linea:#23262e;--rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
+:root[data-theme="light"]{--tinta:#191a1e;--suave:#5a5d66;--fondo:#e9e7e1;--panel:#f7f6f2;
+  --linea:#d0cdc5;--rojo:#b23f34;--cyan:#1c6b7c;--verde:#2b7734;--oro:#8a7420}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);padding:0 1.25rem 6rem;
+  font:15px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.w{max-width:1120px;margin:0 auto}
+.n{max-width:68ch}
+h1,h2,h3,h4{font-weight:400;text-wrap:balance}
+a{color:var(--cyan)}
+img{image-rendering:pixelated;max-width:100%;height:auto;display:block}
+header.top{display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+  padding:4rem 0 2rem;text-align:center}
+header.top img{width:min(100%,642px)}
+.claim{max-width:60ch;color:var(--suave);font-size:1.05rem}
+.claim b{color:var(--tinta);font-weight:400}
+.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:0 1.5rem;width:100%;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:.85rem 0}
+.ficha b{color:var(--rojo);font-weight:400}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;padding:1.25rem 0;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--suave);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus{color:var(--tinta);border-bottom-color:var(--rojo)}
+nav.docs{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+  margin-bottom:1rem}
+section{margin-top:4.5rem;scroll-margin-top:1rem}
+section>h2{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;
+  border-left:3px solid var(--rojo);padding-left:.9rem;margin:0 0 1.5rem}
+.cifras{display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea);
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.cifra{background:var(--panel);padding:1.1rem}
+.cifra b{display:block;font-size:1.7rem;color:var(--oro);font-weight:400;
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.cifra span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--suave)}
+.hall{border-top:1px solid var(--linea);padding-top:1.75rem;margin-top:2.5rem}
+.hall:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.hall h3{margin:0 0 .75rem;font-size:1.15rem;color:var(--rojo)}
+.hall h4{color:var(--oro);margin:1.5rem 0 .5rem;font-size:.95rem}
+.hall p{margin:0 0 1rem}
+pre.asm{background:var(--panel);border-left:2px solid var(--verde);margin:1.25rem 0;
+  padding:1rem 1.1rem;overflow-x:auto;font-size:13px;line-height:1.6;color:var(--tinta)}
+.par{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:820px){.par{grid-template-columns:1fr 1fr}}
+.par figure{margin:0}
+table{border-collapse:collapse;width:100%;margin:1.25rem 0;font-size:13px;display:block;
+  overflow-x:auto}
+th,td{text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--linea)}
+th{color:var(--suave);font-weight:400;font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+td.num{font-variant-numeric:tabular-nums;color:var(--oro)}
+.nivel{margin-top:2rem}
+.nivel h3{margin:0 0 .9rem;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.nivel em{color:var(--cyan);font-style:normal}
+.sep{color:var(--suave);margin:0 .6rem}
+.rejilla{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.rejilla figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.rejilla figcaption{display:flex;justify-content:space-between;padding:.45rem .65rem;
+  font-size:11px;color:var(--suave);border-top:1px solid var(--linea)}
+.dir{font-variant-numeric:tabular-nums;color:var(--verde)}
+footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
+  color:var(--suave);font-size:12px}
+
+/* Aviso de trabajo en curso: tiene que verse antes que las cifras, porque un
+   100% mal leido hace mas dano que no ponerlo. */
+.aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
+  padding:1rem 1.2rem;max-width:900px;border-radius:4px}
+.aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0}
+.galeria img{width:100%;height:auto;image-rendering:pixelated;
+  border:1px solid var(--linea);border-radius:3px}
+.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
+</style>
+<div class="w"><nav class="top"><a href="index.html">Portada</a><a href="EMPEZAR.html">Empezar</a><a href="EL-JUEGO.html">El juego</a><a href="EL-CARTUCHO.html">El cartucho</a><a href="EL-CODIGO.html">El código</a><a href="HALLAZGOS.html" style=color:var(--tinta)>Hallazgos</a><a href="EN-EL-EMULADOR.html">En el emulador</a><a href="PREGUNTAS-ABIERTAS.html">Preguntas abiertas</a><a href="../FINDINGS.html" style="margin-left:auto;color:var(--oro)">English</a></nav>
+<h1 id="hallazgos">Hallazgos</h1>
+<p>Lo que aparecio al desmontar el cartucho. Todo lo de aqui esta <b>medido</b> -ejecutando el formato, o leyendo las constantes con las que el codigo cuenta-, no deducido del aspecto de los bytes.</p>
+<h2 id="5730-puntos-son-la-palabra-konami">5730 puntos son la palabra KONAMI</h2>
+<p>En una zona de bonus, con el protagonista en la casilla <b>exacta</b> X=0x90 e Y=0x39, y solo una vez por partida, el juego escribe <code>KONAMI 5730 PTS</code> y suma esos 5730 puntos.</p>
+<pre><code>0x4910   call es_zona_de_bonus
+         ret nz                      solo en las de bonus
+         ld a,(0e068h) / and a
+         ret nz                      y solo una vez
+         ld hl,(0e132h)
+         ld a,l / cp 090h / ret nz    la X exacta
+         ld a,h / sub 039h / ret nz   y la Y exacta
+         ...
+         ld de,05730h
+         jp suma_al_marcador</code></pre>
+<p>Las dos cifras cuadran solas: el rotulo dice 5730 y la instruccion suma 5730.</p>
+<p>Y la cifra no es arbitraria. En japones los numeros se pueden leer por su sonido: <b>5 = go, 7 = na, 3 = mi</b>, o sea <em><b>go-na-mi</b></em>. Es un huevo de pascua que la casa repitio en muchos de sus juegos, tambien en los recreativos.</p>
+<h2 id="la-demostracion-es-una-partida-grabada">La demostracion es una partida grabada</h2>
+<p>Cuando nadie juega, el muneco se mueve solo. No hay ninguna rutina que decida nada: hay <b>77 pulsaciones grabadas</b>.</p>
+<p>Estan comprimidas en 0x5D82, se descomprimen a 0xE342 y la rutina de 0x468F las va leyendo, una cada dos cuadros, y las deja <b>donde iria lo leido del mando</b>. El guion termina con un 0xFF, que es lo que baja la bandera y acaba la demostracion.</p>
+<p>Los valores son las mismas mascaras que da el joystick: 0x01 arriba, 0x02 abajo, 0x04 izquierda, 0x08 derecha, 0x10 el boton. Los primeros son <code>02 02 02 02 02 02 08 08 08...</code> -abajo seis veces, luego derecha-. El resto del juego no puede distinguir si esta jugando una persona o el guion.</p>
+<p>El encaje que lo confirma: el bloque descomprime a <b>77 bytes exactos</b> y el ultimo es justo el 0xFF que la rutina busca.</p>
+<h2 id="el-mapa-de-colisiones-es-la-propia-pantalla">El mapa de colisiones es la propia pantalla</h2>
+<p>Este cartucho no guarda en memoria por donde se puede andar. Para saberlo <b>lee la pantalla</b>: llama a RDVRM y mira que patron hay dibujado en la casilla. Por debajo de 0x80 es pared -y se apunta como 0x84-, de 0x90 en adelante se pasa.</p>
+<p>Eso explica un detalle que si no pareceria caprichoso: cada vez que se coloca un objeto, el juego se apunta <b>que habia debajo</b>. Si no lo hiciera, al cogerlo se abriria un agujero por donde se podria caminar.</p>
+<h2 id="cincuenta-zonas-sobre-veinticinco-mapas">Cincuenta zonas sobre veinticinco mapas</h2>
+<pre><code>0x498E   ld a,(0e053h)      el numero de zona
+         ld hl,06522h       la tabla de los 25 mapas
+         cp 019h            por debajo de 25 va directa
+         jr c,+
+         sub 019h           y de 25 en adelante se repite</code></pre>
+<p>De los veinticinco mapas, cuatro son el mismo: las entradas 4, 9, 14, 19 y 24 apuntan las cinco al bloque de 0x6E87. <b>Una de cada cinco zonas es de bonus.</b></p>
+<p>La prueba de que el formato RLE esta bien leido no es que los mapas se vean bien. Es que los veinticinco, que no llevan su tamano escrito en ninguna parte, descomprimen a <b>120 bytes clavados</b> cada uno, y ocupan la ROM de 0x6554 a 0x6EF3 sin dejar un hueco.</p>
+<h2 id="los-colores-van-debajo-de-los-patrones">Los colores van debajo de los patrones</h2>
+<p>En SCREEN 2 lo habitual es patrones en 0x0000 y colores en 0x2000. Aqui es al reves, y lo dicen los ocho bytes que el cartucho carga en el VDP: <b>R3=0x7F</b> pone los colores en 0x0000 y <b>R4=0x07</b> los patrones en 0x2000.</p>
+<p>R3 y R4 no son direcciones sino base y mascara. Leerlos al reves no falla de golpe: da formas correctas y colores a franjas.</p>
+<h2 id="cinco-enemigos-cinco-maneras-de-perseguir">Cinco enemigos, cinco maneras de perseguir</h2>
+<p>El reparto de 0x569F manda a cada tipo a su rutina, y ninguna hace lo mismo:</p>
+<ul><li><b>Tipo 1</b>: no va donde estas, va <b>donde vas a estar</b>. Suma a tu posicion un adelanto sacado de una tabla segun la direccion que llevas pulsada.</li><li><b>Tipo 2</b>: no persigue, <b>imita</b>. Copia la direccion del jugador con el eje horizontal invertido.</li><li><b>Tipo 3</b>: se dirige a tu punto <b>espejo</b>, y por eso ronda la pantalla en vez de seguirte.</li><li><b>Tipo 4</b>: como el 1, con un adelanto mas corto.</li><li><b>Tipo 5</b>, el grande: va a por los <b>objetos</b>.</li></ul>
+<p>El motor comun mide las dos distancias, tira por el eje donde estes mas lejos y <b>nunca elige la media vuelta</b>: eso ultimo es lo que evita que se queden temblando en un pasillo.</p>
+<h2 id="la-tabla-de-sprites-se-rota-entera-en-cada-cuadro">La tabla de sprites se rota entera en cada cuadro</h2>
+<p>El MSX1 solo ensena cuatro sprites por linea, y ganan siempre los primeros de la tabla. La rutina de 0x459A vuelca la tabla <b>empezando cada cuadro dieciseis bytes mas adelante</b>, dando la vuelta al final. Como el orden cambia, el que se pierde no es siempre el mismo: en vez de un personaje invisible, un parpadeo repartido.</p>
+<h2 id="el-decorado-que-fluye-no-guarda-ni-un-fotograma">El decorado que fluye no guarda ni un fotograma</h2>
+<p>Las animaciones del fondo no tienen dibujos alternativos. Se coge el patron que ya esta en la memoria de video y se le <b>rotan los bits</b> con <code>rrca</code> o <code>rlca</code>: un pixel por vuelta, ocho bytes por patron. La otra variante mueve los bytes enteros una fila con un <code>lddr</code> y devuelve el que se sale.</p>
+<h2 id="una-direccion-no-significa-nada-sin-decir-cuando">Una direccion no significa nada sin decir cuando</h2>
+<p>0xE0B0 es <b>dos cosas distintas</b>: mientras se monta la zona guarda el mapa descomprimido -120 bytes- y durante la partida son los <b>32 atributos de sprite</b> -128 bytes- que se vuelcan de un tiron a 0x3B00. El mismo kilobyte sirve para las dos cosas porque nunca hacen falta a la vez.</p>
+<h2 id="un-bucle-que-cuenta-catorce-sobre-una-lista-de-trece">Un bucle que cuenta catorce sobre una lista de trece</h2>
+<p>La rutina de 0x41D5 busca el numero de zona en la lista de las que llevan razzon grande y, si no aparece, escribe <code>NO BIG RAZZON</code>. Entra con <code>ld b,00eh</code> -catorce vueltas- pero de 0x609E a 0x60AA solo hay <b>trece bytes</b>:</p>
+<pre><code>05 06 07 0A 0B 0C 10 11 12 1F 23 25 2B    los trece, en orden creciente
+08                                        la decimocuarta, ya fuera</code></pre>
+<p>La decimocuarta comparacion cae en 0x60AB, que es el primer byte del bloque de la zona 0 -es justo donde apunta la primera entrada de la tabla de zonas- y vale 0x08. Ese 0x08 rompe el orden creciente de los otros trece.</p>
+<p>El efecto se puede decir sin suponer intenciones: <b>la zona 8 tambien da coincidencia</b>, y por eso no le sale el aviso aunque no este en la lista.</p>
+<h2 id="codigo-que-no-llama-nadie">Codigo que no llama nadie</h2>
+<p>En 0x4575 hay una rutina de diez bytes que prepara la <b>lectura</b> de la memoria de video -<code>call 0x0050</code> y el puerto sacado de 0x0007-, gemela exacta de la de escritura que si se usa. No hay un solo <code>call</code> ni <code>jp</code> a esa direccion en toda la ROM, ni aparece como palabra en ninguna tabla. Se quedo dentro.</p>
+<footer><p><em>Mopi Ranger</em> lo publico Konami para MSX en 1985; su numero de catalogo es RC-728 y son 16 KB. Todos los derechos sobre el juego siguen siendo de sus titulares. Este trabajo es de preservacion, estudio y documentacion, y la imagen del cartucho no se distribuye.</p></footer></div>
