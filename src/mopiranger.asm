@@ -24,25 +24,6 @@ DATA_cabecera_del_cartucho:
 
 ; ----------------------------------------------------------------------
 ; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
-; El INIT que declara la cabecera. Engancha la interrupcion y se queda en un `jr $`: a partir de ahi el juego entero corre desde el gancho de 0x4043.
 ; ----------------------------------------------------------------------
 init_del_cartucho:
 	di			;4010   ; sin interrupciones mientras se monta el gancho
@@ -69,25 +50,6 @@ L_4041:
 	jr L_4041		;4041   ; el bucle vacio donde INIT se queda para siempre
 
 ; ----------------------------------------------------------------------
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
-; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
 ; El gancho de H.KEYI, y el motor del juego entero: cada cuadro entra aqui. Lleva su propio candado para no reentrar si un cuadro tarda mas de lo que dura.
 ; ----------------------------------------------------------------------
 manejador_de_interrupcion:
@@ -119,25 +81,6 @@ L_4067:
 
 ; ----------------------------------------------------------------------
 ; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
-; HL += A, sin acarreo perdido. La suma de indice mas usada del cartucho.
 ; ----------------------------------------------------------------------
 suma_a_a_hl:
 	add a,l			;4075   ; el byte bajo primero
@@ -147,25 +90,6 @@ suma_a_a_hl:
 	ret			;4079   ; y si lo hubo, sube el byte alto
 
 ; ----------------------------------------------------------------------
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
-; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
 ; Lo mismo pero sobre DE: DE += A. La pareja de suma_a_a_hl.
 ; ----------------------------------------------------------------------
 suma_a_a_de:
@@ -177,25 +101,6 @@ suma_a_a_de:
 
 ; ----------------------------------------------------------------------
 ; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
-; El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
 ; ----------------------------------------------------------------------
 despacha_por_indice:
 	pop hl			;407f   ; HL = la direccion de retorno, o sea la tabla que sigue al call
@@ -205,24 +110,6 @@ L_4080:
 	jp (hl)			;4084   ; y salta: el que llamo ya no vuelve aqui
 
 ; ----------------------------------------------------------------------
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
-; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
 ; De coordenadas de pantalla a direccion en la tabla de nombres. Baja HL tres bits (dividir por ocho, que es el tamano de la celda) y le pone 0x38 arriba, que es donde vive la tabla de nombres segun R2.
 ; ----------------------------------------------------------------------
 celda_de_coordenadas:
@@ -244,24 +131,6 @@ celda_de_coordenadas:
 
 ; ----------------------------------------------------------------------
 ; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
-; De numero de patron a su sitio en la tabla: multiplica por ocho, que son los ocho bytes de dibujo de cada celda.
 ; ----------------------------------------------------------------------
 direccion_de_patron:
 	add hl,hl			;4099   ; por dos
@@ -278,48 +147,12 @@ direccion_de_patron:
 
 ; ----------------------------------------------------------------------
 ; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
 ; ----------------------------------------------------------------------
 borra_trozo_de_vram:
 	ld (044dfh),de		;40a5   ; escribe en la ROM: no tiene efecto ninguno
 	jp 00056h		;40a9   ; BIOS FILVRM - Fills VRAM with value | y el trabajo lo hace la BIOS
 
 ; ----------------------------------------------------------------------
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
-; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
 ; El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.
 ; ----------------------------------------------------------------------
 reparte_la_escena:
@@ -366,24 +199,6 @@ DATA_tabla_de_escenas:
 
 ; ----------------------------------------------------------------------
 ; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
-; La escena que atiende la pausa: si sigue pausado parpadea el rotulo PAUSE encendiendolo y apagandolo con el bit 3 del contador de cuadros, y si se ha soltado devuelve el marcador a su sitio.
 ; ----------------------------------------------------------------------
 escena_de_pausa:
 	ld a,(0e06dh)		;40ee   ; la bandera de pausa
@@ -412,24 +227,6 @@ mueve_y_borra:
 
 ; ----------------------------------------------------------------------
 ; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
-; Al entrar en pausa devuelve el bloque de 42 bytes a su sitio y levanta la bandera.
 ; ----------------------------------------------------------------------
 entra_en_pausa:
 	ld hl,0e018h		;411d   ; la copia
@@ -442,24 +239,6 @@ entra_en_pausa:
 	jp suena		;412f
 
 ; ----------------------------------------------------------------------
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
-; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
 ; La primera escena: monta la pantalla de titulo. Los subestados van al reves, del mas alto al mas bajo, gastandose con los djnz de la cabecera.
 ; ----------------------------------------------------------------------
 escena_de_arranque:
@@ -488,24 +267,6 @@ comprueba_el_arranque:
 
 ; ----------------------------------------------------------------------
 ; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
-; El subestado mas alto, el que se ejecuta primero: deja los registros del VDP y los graficos cargados.
 ; ----------------------------------------------------------------------
 monta_la_pantalla_de_titulo:
 	call borra_la_pantalla		;415b
@@ -515,24 +276,6 @@ monta_la_pantalla_de_titulo:
 	jr pasa_al_subestado_siguiente		;4167
 
 ; ----------------------------------------------------------------------
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
-; La escena de la demostracion, la que corre sola cuando nadie juega.
 ; La escena de la demostracion, la que corre sola cuando nadie juega.
 ; ----------------------------------------------------------------------
 escena_de_demostracion:
@@ -564,23 +307,6 @@ arranca_la_demostracion:
 
 ; ----------------------------------------------------------------------
 ; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
-; La escena de jugar: mueve todo lo que se mueve y mira si la partida ha terminado.
 ; ----------------------------------------------------------------------
 escena_de_juego:
 	djnz arranca_el_juego		;4196   ; subestado 1
@@ -604,23 +330,6 @@ arranca_el_juego:
 
 ; ----------------------------------------------------------------------
 ; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
-; Deja en la cuenta atras los cuadros que la escena quiere esperar y pasa al subestado siguiente.
 ; ----------------------------------------------------------------------
 espera_cuadros:
 	ld (0e004h),a		;41b5   ; los cuadros a esperar
@@ -634,23 +343,6 @@ L_41BD:
 	jr espera_treinta_y_dos		;41c3
 
 ; ----------------------------------------------------------------------
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
-; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
 ; Anuncia la zona nueva. Escribe el rotulo ZONE y, si la zona no esta en la lista de las que llevan razzon grande, avisa con NO BIG RAZZON.
 ; ----------------------------------------------------------------------
 escena_de_empezar_zona:
@@ -696,23 +388,6 @@ reinicia_el_subestado:
 
 ; ----------------------------------------------------------------------
 ; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
-; Descuenta una vida y vuelve a montar la zona.
 ; ----------------------------------------------------------------------
 escena_de_perder_vida:
 	call borra_columna_de_entrada		;420b   ; espera a que acabe la entrada
@@ -755,23 +430,6 @@ L_424A:
 	jp pasa_al_subestado_siguiente		;424d
 
 ; ----------------------------------------------------------------------
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
-; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
 ; Decide si la partida sigue o se acaba: con vidas, a repetir zona; sin vidas, GAME OVER.
 ; ----------------------------------------------------------------------
 escena_de_perder:
@@ -827,22 +485,6 @@ espera_con_cuenta_atras:
 
 ; ----------------------------------------------------------------------
 ; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
-; El recuento de fin de zona: convierte en puntos lo que queda de tiempo y de bonus, de diez en diez y con su sonido, hasta que los dos contadores llegan a cero.
 ; ----------------------------------------------------------------------
 escena_de_recuento:
 	ld hl,0e004h		;42aa   ; la cuenta atras entre paso y paso
@@ -871,22 +513,6 @@ escena_de_recuento:
 
 ; ----------------------------------------------------------------------
 ; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
-; Lo mismo con el tiempo que sobra, pero a diez puntos por unidad en vez de cien.
 ; ----------------------------------------------------------------------
 recuenta_el_tiempo:
 	ld hl,(0e058h)		;42da   ; el tiempo que queda
@@ -910,22 +536,6 @@ recuenta_el_tiempo:
 	ret			;4303
 
 ; ----------------------------------------------------------------------
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
-; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
 ; Lo que se lleva el jugador al superar una zona: dos vidas mas, la zona siguiente y, si no se ha muerto, una marca mas en el contador de 0xE017.
 ; ----------------------------------------------------------------------
 premia_el_fin_de_zona:
@@ -969,22 +579,6 @@ vuelve_a_jugar:
 
 ; ----------------------------------------------------------------------
 ; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
-; Deja el bloque de estado en blanco y le copia los valores de arranque: vidas, marcador y la posicion inicial.
 ; ----------------------------------------------------------------------
 prepara_partida_nueva:
 	ld hl,0e04dh		;433b   ; el bloque de estado
@@ -1016,22 +610,6 @@ DATA_tabla_435a:
 
 ; ----------------------------------------------------------------------
 ; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
-; Monta una partida desde cero: contadores a su sitio, la zona pintada y el bloque comprimido de 0x5d82 descomprimido en 0xE342.
 ; ----------------------------------------------------------------------
 arranca_la_partida:
 	xor a			;4360   ; el contador de 0xE00C
@@ -1050,22 +628,6 @@ arranca_la_partida:
 	jp descomprime_rle		;4383   ; y lo descomprime
 
 ; ----------------------------------------------------------------------
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
-; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
 ; La cortinilla de entrada: cada cuadro borra una columna entera de la pantalla, veintidos celdas de alto, hasta que se agota el contador. Devuelve con el signo puesto mientras quede columna, que es lo que miran las escenas para esperar.
 ; ----------------------------------------------------------------------
 borra_columna_de_entrada:
@@ -1088,22 +650,6 @@ borra_celda_de_la_columna:
 
 ; ----------------------------------------------------------------------
 ; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
-; Esconde los treinta y dos sprites de golpe poniendo 0xE0 en la coordenada Y de cada uno, que es el valor con el que el VDP los deja fuera de pantalla. Los atributos van de cuatro en cuatro, por eso los cuatro `inc hl`.
 ; ----------------------------------------------------------------------
 esconde_los_sprites:
 	ld hl,0e0b0h		;439f   ; el buffer de atributos de sprite
@@ -1121,22 +667,6 @@ esconde_un_sprite:
 	ret			;43b1
 
 ; ----------------------------------------------------------------------
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
-; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
 ; Suma DE al marcador, en BCD y con los `daa` de rigor. El marcador son tres bytes en 0xE04D, o sea seis cifras, y al desbordar se queda clavado en 999999. Ojo al leer el listado: los `ld de,07000h` que llaman aqui son SIETE MIL PUNTOS, no una direccion de la ROM.
 ; ----------------------------------------------------------------------
 suma_al_marcador:
@@ -1169,22 +699,6 @@ suma_al_marcador:
 
 ; ----------------------------------------------------------------------
 ; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
-; Mira si el marcador ha pasado al record y lo actualiza. Compara primero la cifra alta y solo si empatan baja a las cuatro de abajo.
 ; ----------------------------------------------------------------------
 compara_con_el_record:
 	ld a,(0e049h)		;43dc   ; la cifra alta del record
@@ -1202,21 +716,6 @@ guarda_el_record:
 	jr pinta_el_record		;43f4
 
 ; ----------------------------------------------------------------------
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
-; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
 ; Deja la pantalla de juego con todo lo fijo: los rotulos del marcador y las cuatro cifras que lo acompanan.
 ; ----------------------------------------------------------------------
 pinta_el_marco:
@@ -1253,21 +752,6 @@ pinta_dos_cifras:
 
 ; ----------------------------------------------------------------------
 ; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
-; Escribe B bytes en BCD como cifras en la pantalla, dos por byte y de mayor a menor. Al medio byte le suma 0x10, que es donde esta el patron del '0': la misma cuenta que la fuente de los rotulos, indice = ASCII menos 0x20.
 ; ----------------------------------------------------------------------
 pinta_cifras_bcd:
 	ld a,(de)			;4432   ; el byte en BCD
@@ -1294,21 +778,6 @@ pinta_las_vidas:
 
 ; ----------------------------------------------------------------------
 ; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
-; Enciende y apaga el rotulo BONUS del marcador, cada 32 cuadros, cuando hay bonus que anunciar.
 ; ----------------------------------------------------------------------
 pinta_el_aviso_de_bonus:
 	ld a,(0e067h)		;4454   ; las banderas de aviso
@@ -1331,21 +800,6 @@ L_446E:
 
 ; ----------------------------------------------------------------------
 ; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
-; Escribe ZONE y el numero, salvo en las zonas de bonus, que llevan BONUS STAGE en su lugar.
 ; ----------------------------------------------------------------------
 pinta_el_rotulo_de_zona:
 	call es_zona_de_bonus		;4471   ; mira si esta zona es de bonus
@@ -1361,21 +815,6 @@ L_4486:
 	call limpia_para_la_escena		;4486
 
 ; ----------------------------------------------------------------------
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
-; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
 ; Monta el rotulo grande del titulo: rellena un bloque de patrones, escribe tres filas de veinte celdas con indices consecutivos -o sea un dibujo grande hecho de celdas seguidas- y remata con dos filas de relleno.
 ; ----------------------------------------------------------------------
 monta_la_pantalla_de_titulo_grande:
@@ -1430,21 +869,6 @@ limpia_para_la_escena:
 
 ; ----------------------------------------------------------------------
 ; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
-; HL -= A, la pareja de suma_a_a_hl.
 ; ----------------------------------------------------------------------
 resta_a_a_hl:
 	ld b,a			;44e1
@@ -1457,21 +881,6 @@ resta_a_a_hl:
 
 ; ----------------------------------------------------------------------
 ; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
-; Quita cuatro a las dos mitades de HL a la vez: es el ajuste de una coordenada de sprite de 16x16 a su centro.
 ; ----------------------------------------------------------------------
 encoge_cuatro:
 	ld a,l			;44e8   ; cuatro a la coordenada de abajo
@@ -1483,21 +892,6 @@ encoge_cuatro:
 	ret			;44f0
 
 ; ----------------------------------------------------------------------
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
-; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
 ; Resta E a un contador de dos bytes en BCD, con el prestamo bien llevado. Es lo que gasta el tiempo y el bonus durante el recuento.
 ; ----------------------------------------------------------------------
 resta_bcd_de_dos_bytes:
@@ -1515,21 +909,6 @@ resta_bcd_de_dos_bytes:
 
 ; ----------------------------------------------------------------------
 ; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
-; Dice si la zona actual es de bonus: devuelve con Z si el numero de zona acaba en 0 o en 5, o sea una de cada cinco. Es la misma regla de cinco que reparte tabla_de_mapas.
 ; ----------------------------------------------------------------------
 es_zona_de_bonus:
 	ld a,(0e052h)		;44fd   ; el numero de zona, en BCD
@@ -1539,21 +918,6 @@ es_zona_de_bonus:
 	ret			;4505
 
 ; ----------------------------------------------------------------------
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
-; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
 ; Esconde los sprites y borra la tabla de nombres entera, las 768 celdas.
 ; ----------------------------------------------------------------------
 borra_la_pantalla:
@@ -1565,21 +929,6 @@ borra_la_pantalla:
 
 ; ----------------------------------------------------------------------
 ; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
-; Un salto a LDIRVM de la BIOS con los registros ya cambiados: copia BC bytes de HL a la memoria de video en DE.
 ; ----------------------------------------------------------------------
 vuelca_a_vram:
 	ex de,hl			;4513   ; la BIOS los quiere al reves
@@ -1588,25 +937,6 @@ L_4517:
 	ld c,000h		;4517
 
 ; ----------------------------------------------------------------------
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
-; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
 ; Lee del bloque la palabra con el destino en VRAM y sigue descomprimiendo alli. Es lo que permite que un bloque se reparta por varias zonas de la memoria de video.
 ; ----------------------------------------------------------------------
 abre_destino_de_vram:
@@ -1618,25 +948,6 @@ abre_destino_de_vram:
 	inc de			;451e   ; DE vuelve a apuntar a los datos
 
 ; ----------------------------------------------------------------------
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
-; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
 ; El bucle que escribe al puerto del VDP. Mismo formato que descomprime_rle y dos controles de mas: 0x80 abre otro destino y 0x00 cierra.
 ; ----------------------------------------------------------------------
 vuelca_rle_al_vdp:
@@ -1677,25 +988,6 @@ L_4543:
 
 ; ----------------------------------------------------------------------
 ; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
-; El RLE volcado al puerto del VDP en vez de a la RAM: HL es la direccion de VRAM y DE el bloque. Con el se cargan los patrones y los colores de la pantalla.
 ; ----------------------------------------------------------------------
 descomprime_a_vram:
 	ld c,000h		;4548   ; C=0 marca que aun no se ha abierto ningun destino
@@ -1703,49 +995,11 @@ descomprime_a_vram:
 
 ; ----------------------------------------------------------------------
 ; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
-; El descompresor con el destino fijo en 0xE0B0, que es donde se monta el mapa de la zona.
 ; ----------------------------------------------------------------------
 descomprime_a_e0b0:
 	ld de,0e0b0h		;454c   ; el buffer del mapa, 120 bytes
 
 ; ----------------------------------------------------------------------
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
-; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
 ; El descompresor RLE del cartucho: HL es el origen y DE el destino. El byte de control lleva la cuenta en los siete bits de abajo y en el bit 7 si lo que sigue se copia tal cual o se repite; un control de 0x00 cierra. Con el se guardan los 25 mapas de zona, que descomprimen a 120 bytes clavados cada uno.
 ; ----------------------------------------------------------------------
 descomprime_rle:
@@ -1772,25 +1026,6 @@ L_4562:
 	jr descomprime_rle		;4567   ; y sigue con el control siguiente
 
 ; ----------------------------------------------------------------------
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
-; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
 ; Deja el VDP listo para escribir en HL y el puerto de datos en C, sacado de la ROM de la BIOS (0x0006) en vez de escrito a mano.
 ; ----------------------------------------------------------------------
 prepara_escritura_de_vram:
@@ -1820,25 +1055,6 @@ DATA_prepara_lectura_de_vram:
 
 ; ----------------------------------------------------------------------
 ; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
-; El interprete de rotulos: el guion es [destino en VRAM][indices de patron], con 0xFE para saltar a otro destino y 0xFF para acabar. La fuente esta ordenada como el ASCII desde el espacio, o sea que el indice es el codigo menos 0x20.
 ; ----------------------------------------------------------------------
 escribe_rotulo:
 	ld c,0ffh		;457f   ; la mascara 0xFF deja pasar el byte tal cual
@@ -1864,32 +1080,12 @@ pinta_caracter_del_guion:
 
 ; ----------------------------------------------------------------------
 ; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
-; La misma rutina con la mascara a cero: recorre el mismo guion pero escribe ceros, o sea que borra el rotulo sin tener que guardar aparte donde estaba.
 ; ----------------------------------------------------------------------
 borra_rotulo:
 	ld c,000h		;4596   ; con la mascara a cero, todo byte sale 0
 	jr lee_destino_del_guion		;4598
 
 ; ----------------------------------------------------------------------
-; Vuelca los atributos de sprite a la memoria de video, pero EMPEZANDO CADA CUADRO POR OTRO SITIO: dieciseis bytes mas adelante que el anterior, dando la vuelta al llegar al final. Asi ningun sprite se queda siempre el ultimo.
 ; Vuelca los atributos de sprite a la memoria de video, pero EMPEZANDO CADA CUADRO POR OTRO SITIO: dieciseis bytes mas adelante que el anterior, dando la vuelta al llegar al final. Asi ningun sprite se queda siempre el ultimo.
 ; ----------------------------------------------------------------------
 reparte_la_prioridad_de_sprites:
@@ -1926,25 +1122,6 @@ reparte_la_prioridad_de_sprites:
 	jp vuelca_a_vram		;45d1
 
 ; ----------------------------------------------------------------------
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
-; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
 ; Deja la maquina lista: borra los 16 KB de memoria de video y carga los ocho registros del VDP desde la tabla de 0x45f7.
 ; ----------------------------------------------------------------------
 arranca_el_vdp:
@@ -1985,20 +1162,6 @@ L_45FF:
 
 ; ----------------------------------------------------------------------
 ; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
-; Lee lo que el jugador esta haciendo. Con partida en marcha junta mando y teclado; sin partida, es la demostracion la que pone las pulsaciones.
 ; ----------------------------------------------------------------------
 lee_los_mandos:
 	ld hl,0e002h		;4604   ; las banderas del juego
@@ -2014,20 +1177,6 @@ junta_mando_y_teclado:
 	or b			;4618
 
 ; ----------------------------------------------------------------------
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
-; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
 ; De lo que esta pulsado ahora saca lo que se acaba de pulsar: guarda lo de antes, lo compara con un XOR y se queda con lo que ha cambiado a pulsado. Asi un boton mantenido no cuenta como pulsacion nueva.
 ; ----------------------------------------------------------------------
 saca_las_pulsaciones_nuevas:
@@ -2052,20 +1201,6 @@ saca_las_pulsaciones_nuevas:
 
 ; ----------------------------------------------------------------------
 ; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
-; Deja UNA sola direccion, probandolas por orden de prioridad: arriba, abajo, izquierda y derecha. En diagonal gana la primera de la lista, y si no queda ninguna se sale con cero.
 ; ----------------------------------------------------------------------
 elige_una_sola_direccion:
 	and 001h		;4630   ; arriba
@@ -2086,20 +1221,6 @@ guarda_la_direccion:
 
 ; ----------------------------------------------------------------------
 ; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
-; Lee el mando por el PSG: el registro 15 elige el puerto y el 14 trae las lineas. Vienen con la logica invertida -pulsado es cero-, y por eso el `cpl`.
 ; ----------------------------------------------------------------------
 lee_el_mando:
 	ld e,08fh		;4648   ; selecciona el puerto del mando
@@ -2114,20 +1235,6 @@ lee_el_mando:
 	ret			;4659
 
 ; ----------------------------------------------------------------------
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
-; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
 ; Lee tres filas de la matriz del teclado y las recoloca hasta dejarlas en el MISMO formato de seis bits que el mando. Todo el trabajo de `rrca` de aqui es eso: cuadrar los bits para que arriba caiga donde el mando pone arriba.
 ; ----------------------------------------------------------------------
 lee_el_teclado:
@@ -2170,20 +1277,6 @@ lee_el_teclado:
 
 ; ----------------------------------------------------------------------
 ; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
-; Aqui la maquina no juega sola: LEE una partida grabada. El guion son 77 pulsaciones que se descomprimieron a 0xE342, y avanza una cada dos cuadros. El 0xFF del final es lo que baja la bandera y termina la demostracion.
 ; ----------------------------------------------------------------------
 reproduce_la_demostracion:
 	ld hl,0e00ch		;468f   ; el paso de la demostracion
@@ -2203,20 +1296,6 @@ L_4699:
 	ret			;46a8
 
 ; ----------------------------------------------------------------------
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
-; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
 ; El mando durante la presentacion: cualquier tecla salta la demostracion, y el disparo empieza la partida.
 ; ----------------------------------------------------------------------
 atiende_el_menu:
@@ -2265,20 +1344,6 @@ prepara_la_cortinilla:
 
 ; ----------------------------------------------------------------------
 ; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
-; Abre la cortinilla del titulo: cada cuadro sube una fila y pinta tres tramos de celdas con indices consecutivos, dejando el hueco de en medio en blanco.
 ; ----------------------------------------------------------------------
 avanza_la_cortinilla:
 	ld hl,(0e00eh)		;46f5   ; la fila actual
@@ -2311,19 +1376,6 @@ pinta_celda_del_tramo:
 
 ; ----------------------------------------------------------------------
 ; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
-; El reloj de la pantalla de titulo: sube el contador de 16 bits y reparte al tramo que diga su byte alto, con la tabla de cinco de 0x4735.
 ; ----------------------------------------------------------------------
 avanza_la_coreografia:
 	ld hl,(0e016h)		;4727   ; el contador de la coreografia
@@ -2348,19 +1400,6 @@ DATA_tabla_de_subestados:
 
 ; ----------------------------------------------------------------------
 ; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
-; El primer tramo: carga los sprites del titulo y coloca las ocho figuras en su sitio de partida.
 ; ----------------------------------------------------------------------
 tramo_de_entrada:
 	ld a,(0e016h)		;473f   ; el paso dentro del tramo
@@ -2381,19 +1420,6 @@ carga_los_sprites_del_titulo:
 	jr vuelca_los_sprites		;4764
 
 ; ----------------------------------------------------------------------
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
-; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
 ; El tramo largo: las figuras cruzan la pantalla. Solo se mueve en los cuadros pares, y cada dieciseis se corrigen dos de ellas con el rebote de 0x47ab.
 ; ----------------------------------------------------------------------
 tramo_de_paseo:
@@ -2435,19 +1461,6 @@ avanza_una_figura:
 
 ; ----------------------------------------------------------------------
 ; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
-; Suma C a la coordenada y, si llega justo al tope B, le da la vuelta al paso restandolo del doble. Es el rebote de las figuras que van y vienen.
 ; ----------------------------------------------------------------------
 rebota_la_figura:
 	ld a,(hl)			;47ab   ; la coordenada
@@ -2465,19 +1478,6 @@ L_47B6:
 	ret			;47b7
 
 ; ----------------------------------------------------------------------
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
-; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
 ; Mete en escena la figura que faltaba, la novena, colocandola ocho pixeles por debajo de otra.
 ; ----------------------------------------------------------------------
 tramo_de_la_novena_figura:
@@ -2502,19 +1502,6 @@ vuelca_los_sprites:
 	jp L_5FDB		;47e4   ; a la tabla de sprites de la memoria de video
 
 ; ----------------------------------------------------------------------
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
-; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
 ; El ultimo tramo: las figuras se van a paso lento, y al llegar a 0xC0 el contador se reinicia y la coreografia vuelve a empezar.
 ; ----------------------------------------------------------------------
 tramo_de_salida:
@@ -2566,19 +1553,6 @@ DATA_estado_inicial_e0cc:
 
 ; ----------------------------------------------------------------------
 ; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
-; El cuerpo del cuadro mientras se juega: mueve el marcador, el protagonista y los enemigos, y luego mira si el protagonista esta en un sitio donde pueda pasar algo.
 ; ----------------------------------------------------------------------
 mueve_todo:
 	call reparte_la_prioridad_de_sprites		;482a   ; el marcador que se desplaza
@@ -2602,19 +1576,6 @@ mueve_todo:
 	jr z,cuenta_el_bonus		;4852
 
 ; ----------------------------------------------------------------------
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
-; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
 ; Solo pasa algo cuando el protagonista esta CUADRADO con la rejilla: las dos coordenadas multiplo de ocho. Entre celda y celda no se comprueba nada.
 ; ----------------------------------------------------------------------
 mira_si_esta_en_una_celda:
@@ -2648,19 +1609,6 @@ avanza_la_fase_del_bonus:
 
 ; ----------------------------------------------------------------------
 ; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
-; El premio gordo: veinte mil puntos, sumados en tres veces porque el sumador trabaja en BCD y no le caben de una. OJO al leerlo: los `ld de,07000h` son SIETE MIL PUNTOS, no una direccion de la ROM.
 ; ----------------------------------------------------------------------
 premio_de_veinte_mil:
 	ld de,07000h		;488c   ; siete mil
@@ -2678,18 +1626,6 @@ estalla_el_protagonista:
 	jp coge_el_objeto		;48a5
 
 ; ----------------------------------------------------------------------
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
-; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
 ; Con el protagonista cuadrado en una celda, decide que toca: seguir jugando, gastar tiempo o rematar la zona.
 ; ----------------------------------------------------------------------
 mira_que_pasa_en_la_celda:
@@ -2709,18 +1645,6 @@ pasa_al_recuento:
 	ret			;48c3
 
 ; ----------------------------------------------------------------------
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
-; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
 ; El reloj de la zona: baja diez de tiempo cada dieciseis cuadros, y cuando se acaba se termina la zona.
 ; ----------------------------------------------------------------------
 gasta_el_tiempo:
@@ -2744,18 +1668,6 @@ L_48E3:
 
 ; ----------------------------------------------------------------------
 ; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
-; La lista de todo lo que hay que mover en un cuadro de juego, en el orden en que el cartucho lo hace. Ese orden IMPORTA: quien se mueve antes decide quien choca con quien.
 ; ----------------------------------------------------------------------
 mueve_a_todos:
 	call pinta_el_tiempo		;48e6   ; repinta el tiempo
@@ -2774,15 +1686,6 @@ mueve_a_todos:
 	call parpadea_los_objetos		;490d
 
 ; ----------------------------------------------------------------------
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
-; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
 ; EL HUEVO DE PASCUA DE LA CASA. Los 5730 puntos no son una cifra
 ; ----------------------------------------------------------------------
 	call es_zona_de_bonus		;4910   ; el premio escondido solo esta en las zonas de bonus
@@ -2823,18 +1726,6 @@ sigue_el_remate:
 
 ; ----------------------------------------------------------------------
 ; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
-; El final bueno de una zona: en las de bonus, si se ha llegado entero, da el PERFECT BONUS y pone 0x1000 de bonus por cobrar.
 ; ----------------------------------------------------------------------
 termina_la_zona_bien:
 	ld hl,0e066h		;4955   ; el contador del final
@@ -2869,18 +1760,6 @@ avanza_el_final_de_zona:
 
 ; ----------------------------------------------------------------------
 ; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
-; Monta la zona entera: saca su mapa de la tabla, lo descomprime, lo pinta y coloca a todo el mundo en su sitio de partida. Las zonas de la 25 a la 49 vuelven a usar los mapas de la 0 a la 24, que es lo que hace el `sub 019h`.
 ; ----------------------------------------------------------------------
 monta_la_zona:
 	ld a,(0e053h)		;498e   ; la zona, de 0 a 49
@@ -2905,18 +1784,6 @@ L_499A:
 	call 00056h		;49b9   ; BIOS FILVRM - Fills VRAM with value
 
 ; ----------------------------------------------------------------------
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
-; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
 ; Deja el bloque de estado en blanco y siembra las posiciones de partida: el protagonista, los cuatro enemigos y sus velocidades.
 ; ----------------------------------------------------------------------
 coloca_a_todo_el_mundo:
@@ -2990,17 +1857,6 @@ coloca_un_enemigo:
 
 ; ----------------------------------------------------------------------
 ; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
-; Dibuja el marco del area de juego: las dos filas de arriba y abajo con un patron, y las cuatro columnas de los lados celda a celda.
 ; ----------------------------------------------------------------------
 pinta_el_marco_de_la_zona:
 	ld hl,03844h		;4a61   ; la fila de arriba del area
@@ -3036,17 +1892,6 @@ pinta_columna_del_marco:
 	ret			;4aa5
 
 ; ----------------------------------------------------------------------
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
-; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
 ; Lee el guion de la zona y va sembrando la pantalla. Las posiciones no vienen enteras: son desplazamientos que se suman a un puntero que empieza en la tabla de nombres.
 ; ----------------------------------------------------------------------
 monta_el_decorado_de_la_zona:
@@ -3184,17 +2029,6 @@ siembra_una_celda:
 
 ; ----------------------------------------------------------------------
 ; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
-; Se apunta que habia en la pantalla debajo de cada objeto, para poder restaurarlo cuando el objeto desaparezca. Es lo que evita tener que repintar la zona entera.
 ; ----------------------------------------------------------------------
 lee_lo_que_habia_debajo:
 	ld a,(0e280h)		;4b78   ; cuantos objetos
@@ -3249,17 +2083,6 @@ pinta_una_suelta:
 	jp 0004dh		;4bc8   ; BIOS WRTVRM - Writes data in VRAM | y a la pantalla
 
 ; ----------------------------------------------------------------------
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
-; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
 ; Un cuadro del protagonista: lee el mando, decide a donde puede ir, lo mueve y elige el dibujo.
 ; ----------------------------------------------------------------------
 mueve_al_protagonista:
@@ -3362,17 +2185,6 @@ DATA_direcciones_4c68:
 
 ; ----------------------------------------------------------------------
 ; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
-; El protagonista se dibuja con DOS sprites en el mismo sitio -0xE0B0 y 0xE0B4-, que es como se le da mas de un color en una maquina de un color por sprite.
 ; ----------------------------------------------------------------------
 coloca_el_sprite_del_protagonista:
 	ld hl,(0e130h)		;4c70   ; su posicion
@@ -3387,16 +2199,6 @@ coloca_el_sprite_del_martillo:
 	ret			;4c86
 
 ; ----------------------------------------------------------------------
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
-; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
 ; Atiende el boton de disparo. Solo sale martillo si no hay uno volando ya y si el protagonista esta bastante arriba.
 ; ----------------------------------------------------------------------
 lanza_el_martillo:
@@ -3441,16 +2243,6 @@ saca_el_martillo:
 	jp suena		;4cde
 
 ; ----------------------------------------------------------------------
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
-; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
 ; Mide a que distancia esta cada uno de los cuatro enemigos del martillo y se queda con el mas cercano. Segun la direccion mira la fila o la columna, y por eso intercambia D y E antes de empezar.
 ; ----------------------------------------------------------------------
 busca_el_enemigo_mas_cercano:
@@ -3516,16 +2308,6 @@ salta_al_enemigo_elegido:
 
 ; ----------------------------------------------------------------------
 ; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
-; Prueba el golpe primero en el enemigo mas cercano y luego en los cuatro por orden. Asi el mas cercano tiene preferencia aunque dos esten a tiro.
 ; ----------------------------------------------------------------------
 prueba_el_golpe_en_todos:
 	call prueba_el_golpe		;4d47   ; el mas cercano, primero
@@ -3542,16 +2324,6 @@ prueba_el_golpe_en_todos:
 	ld iy,0e064h		;4d6f
 
 ; ----------------------------------------------------------------------
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
-; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
 ; Mira si el martillo alcanza a este enemigo y, si lo alcanza, lo mata: cien puntos, el sonido y el enemigo escondido.
 ; ----------------------------------------------------------------------
 prueba_el_golpe:
@@ -3597,16 +2369,6 @@ comprueba_el_alcance:
 	jr golpea_al_enemigo		;4dbd
 
 ; ----------------------------------------------------------------------
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
-; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
 ; Redondea la posicion del golpe a la celda de ocho en ocho, hacia arriba: asi el destello sale centrado en la casilla y no a medio camino.
 ; ----------------------------------------------------------------------
 cuadra_a_la_rejilla:
@@ -3687,15 +2449,6 @@ suena_el_golpe:
 
 ; ----------------------------------------------------------------------
 ; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
-; Cuando cae un enemigo, los otros se enteran: la tabla de 0x4ebd dice, para cada uno, cuales son sus tres vecinos, y a esos se les da la vuelta.
 ; ----------------------------------------------------------------------
 contagia_a_los_vecinos:
 	ld a,(ix+019h)		;4e52   ; cual ha caido
@@ -3772,15 +2525,6 @@ DATA_tabla_4ebd:
 
 ; ----------------------------------------------------------------------
 ; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
-; Mira si el protagonista ha alcanzado la fila de meta, que son las alturas 0xB4 y 0xB5.
 ; ----------------------------------------------------------------------
 mira_si_ha_llegado_arriba:
 	ld a,(0e137h)		;4ecd   ; su altura
@@ -3801,15 +2545,6 @@ marca_la_llegada:
 
 ; ----------------------------------------------------------------------
 ; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
-; Mira las cuatro esquinas del protagonista, una por una, por si alguna cae sobre un objeto que se pueda coger.
 ; ----------------------------------------------------------------------
 mira_los_cuatro_objetos:
 	ld de,0e13bh		;4ee8   ; la primera esquina
@@ -3827,15 +2562,6 @@ mira_una_esquina:
 	ld a,(de)			;4f09   ; lo que hay en esa esquina
 
 ; ----------------------------------------------------------------------
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
-; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
 ; Si en la casilla hay un objeto de los que se cogen -los patrones 0xB7 y 0xB8-, lo borra devolviendo lo que habia debajo y da los puntos.
 ; ----------------------------------------------------------------------
 coge_el_objeto:
@@ -3881,15 +2607,6 @@ L_4F5D:
 
 ; ----------------------------------------------------------------------
 ; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
-; Mueve todo lo que se mueve de fondo, alternando dos juegos de animaciones segun el bit 0 del contador de cuadros.
 ; ----------------------------------------------------------------------
 anima_el_decorado:
 	ld a,(0e003h)		;4f60   ; el contador de cuadros
@@ -3922,15 +2639,6 @@ reparte_el_dibujo_del_final:
 
 ; ----------------------------------------------------------------------
 ; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
-; Los objetos parpadean cambiando de patron cada dieciseis cuadros.
 ; ----------------------------------------------------------------------
 parpadea_los_objetos:
 	ld a,(0e003h)		;4f98   ; el contador de cuadros
@@ -3952,15 +2660,6 @@ parpadea_las_dos_sueltas:
 	jp L_4BBB		;4fb6
 
 ; ----------------------------------------------------------------------
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
-; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
 ; La animacion del decorado que fluye. Cuando queda tiempo va a un ritmo y cuando se acaba, al doble: es la prisa que mete el juego al final de la zona.
 ; ----------------------------------------------------------------------
 anima_los_patrones:
@@ -4003,15 +2702,6 @@ rota_a_la_izquierda:
 
 ; ----------------------------------------------------------------------
 ; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
-; La otra animacion: en vez de rotar los bits de cada byte, mueve los BYTES enteros una fila, con un `lddr` en un sentido y un `ldir` en el otro, y da la vuelta al que se sale. Un desplazamiento vertical en vez de horizontal.
 ; ----------------------------------------------------------------------
 desplaza_los_patrones:
 	ld hl,0e2ceh		;4ff2   ; el ultimo byte del bloque
@@ -4034,15 +2724,6 @@ desplaza_los_patrones:
 
 ; ----------------------------------------------------------------------
 ; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
-; Los bloques animados hay que dejarlos en los TRES tercios de la pantalla, porque en este modo cada tercio tiene su propia copia de los patrones. De ahi los dos saltos de 0x800.
 ; ----------------------------------------------------------------------
 vuelca_a_los_tres_tercios:
 	push hl			;501b
@@ -4063,15 +2744,6 @@ vuelca_a_los_tres_tercios:
 	jp vuelca_a_vram		;503e   ; al tercero
 
 ; ----------------------------------------------------------------------
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
-; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
 ; Busca una casilla en la lista de objetos y devuelve su numero, o cero si no esta.
 ; ----------------------------------------------------------------------
 busca_la_casilla_en_la_lista:
@@ -4095,14 +2767,6 @@ pasa_al_siguiente_objeto:
 	ret			;5057
 
 ; ----------------------------------------------------------------------
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
-; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
 ; Saca un elemento de las dos listas paralelas -posiciones y lo que hay debajo- y aprieta las dos con sendos `ldir` para que no queden huecos.
 ; ----------------------------------------------------------------------
 saca_de_la_lista:
@@ -4169,14 +2833,6 @@ anda_ocho_pixeles:
 
 ; ----------------------------------------------------------------------
 ; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
-; Suma a la posicion el paso que dice la tabla para la direccion A.
 ; ----------------------------------------------------------------------
 suma_el_paso:
 	call lee_puntero_de_tabla		;50ad   ; el paso de esa direccion
@@ -4191,14 +2847,6 @@ suma_el_paso:
 	ret			;50bc
 
 ; ----------------------------------------------------------------------
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
-; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
 ; Dice si esta cuadrado en la rejilla: las dos coordenadas multiplo de ocho. Devuelve Z cuando lo esta, y es lo que se pregunta antes de dejar girar.
 ; ----------------------------------------------------------------------
 esta_cuadrado:
@@ -4215,14 +2863,6 @@ esta_en_el_suelo:
 	ret			;50cf
 
 ; ----------------------------------------------------------------------
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
-; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
 ; Dice si dos puntos estan a menos de C pixeles, mirando las dos coordenadas por separado. Es una caja, no un circulo: mas barato y suficiente.
 ; ----------------------------------------------------------------------
 estan_cerca:
@@ -4254,25 +2894,6 @@ lee_la_posicion:
 
 ; ----------------------------------------------------------------------
 ; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
-; DE = tabla[A], con la tabla en HL y entradas de 16 bits. Es la mitad de abajo del despachador, y tambien se llama suelta para leer tablas de DATOS: diez sitios del cartucho la usan.
 ; ----------------------------------------------------------------------
 lee_puntero_de_tabla:
 	add a,a			;50f2   ; A por dos, que las entradas son palabras
@@ -4286,14 +2907,6 @@ L_50FA:
 	jp suena		;50fc
 
 ; ----------------------------------------------------------------------
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
-; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
 ; Convierte el bit del mando en un numero de direccion de 0 a 3, o 0xFF si no hay ninguna pulsada. Es el numero con el que se indexan las tablas de pasos.
 ; ----------------------------------------------------------------------
 traduce_el_mando:
@@ -4334,14 +2947,6 @@ DATA_mascaras_de_direccion:
 
 
 ; ----------------------------------------------------------------------
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
-; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
 ; Decide si el giro que se pide se puede hacer. Media vuelta se permite siempre, aunque no se este cuadrado; girar noventa grados exige estar en el centro de una casilla.
 ; ----------------------------------------------------------------------
 decide_el_giro:
@@ -4421,14 +3026,6 @@ marca_si_esta_cuadrado:
 
 ; ----------------------------------------------------------------------
 ; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
-; Lo mismo que el giro del protagonista, pero para los enemigos, y con una excepcion: el enemigo de tipo 5 puede pasar tambien por las tres casillas de meta.
 ; ----------------------------------------------------------------------
 decide_el_giro_del_enemigo:
 	ld a,(ix+004h)		;51a3   ; la direccion pedida
@@ -4475,14 +3072,6 @@ sigue_recto_el_enemigo:
 
 ; ----------------------------------------------------------------------
 ; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
-; El paso de la animacion del protagonista: da la vuelta cada cuatro y solo avanza mientras haya algo pulsado, para que quieto no mueva las piernas.
 ; ----------------------------------------------------------------------
 anima_al_protagonista:
 	ld hl,0e13ah		;51ee   ; el paso de la animacion
@@ -4502,14 +3091,6 @@ avanza_si_se_mueve:
 	ret			;5202
 
 ; ----------------------------------------------------------------------
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
-; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
 ; Mira lo que hay dibujado en la casilla propia y en la de ocho pixeles mas alla, y se lo guarda. Es la lectura del mapa que hace de colision, y solo se hace estando cuadrado.
 ; ----------------------------------------------------------------------
 lee_el_decorado_alrededor:
@@ -4609,13 +3190,6 @@ L_52A9:
 
 ; ----------------------------------------------------------------------
 ; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
-; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
-; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
-; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
-; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
-; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
-; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
-; Empuja la posicion hasta el multiplo de ocho mas cercano EN EL SENTIDO DE LA MARCHA, de uno en uno. No redondea: arrastra, y por eso el giro se siente pegado a la rejilla.
 ; ----------------------------------------------------------------------
 cuadra_a_la_casilla:
 	ld a,(ix+005h)		;52ad   ; la direccion
@@ -4652,13 +3226,6 @@ cuadra_hacia_abajo:
 	jr cuadra_hacia_abajo		;52da
 
 ; ----------------------------------------------------------------------
-; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
-; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
-; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
-; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
-; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
-; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
-; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
 ; Lee de la pantalla los patrones de las seis casillas que rodean a la entidad y se los guarda en su bloque. Es la lectura que sustituye a un mapa de colisiones en memoria.
 ; ----------------------------------------------------------------------
 radiografia_el_entorno:
@@ -4744,13 +3311,6 @@ guarda_lo_de_la_derecha:
 
 ; ----------------------------------------------------------------------
 ; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
-; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
-; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
-; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
-; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
-; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
-; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
-; El dibujo del protagonista: la direccion elige el grupo y el bit 3 del contador de cuadros alterna los dos pasos, o sea que anda a ocho cuadros por paso.
 ; ----------------------------------------------------------------------
 elige_el_dibujo_del_protagonista:
 	ld a,(0e135h)		;5385   ; la direccion
@@ -4785,13 +3345,6 @@ DATA_direcciones_539e:
 
 
 ; ----------------------------------------------------------------------
-; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
-; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
-; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
-; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
-; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
-; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
-; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
 ; Mueve el martillo lanzado. Solo mira el decorado cuando esta cuadrado, y en cuanto se encuentra algo que no deja pasar, se acaba el vuelo.
 ; ----------------------------------------------------------------------
 vuela_el_martillo:
@@ -4834,13 +3387,6 @@ guarda_el_martillo:
 
 ; ----------------------------------------------------------------------
 ; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
-; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
-; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
-; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
-; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
-; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
-; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
-; Prueba el choque del protagonista contra los cinco enemigos, uno por uno.
 ; ----------------------------------------------------------------------
 mira_los_choques:
 	ld a,(0e067h)		;53f7   ; el estado de la partida
@@ -4857,13 +3403,6 @@ mira_los_choques:
 	ld ix,0e220h		;5419   ; y el quinto
 
 ; ----------------------------------------------------------------------
-; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
-; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
-; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
-; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
-; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
-; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
-; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
 ; El choque es una caja de ocho pixeles: si el protagonista y el enemigo estan a menos de ocho en las dos coordenadas, se acabo.
 ; ----------------------------------------------------------------------
 prueba_un_choque:
@@ -4882,12 +3421,6 @@ prueba_un_choque:
 	jp marca_la_llegada		;5436   ; y si si, se acabo la vida
 
 ; ----------------------------------------------------------------------
-; La animacion del final: cada ocho cuadros gira el dibujo del protagonista, y en el primer paso se guarda una copia de los dos patrones que va a machacar.
-; La animacion del final: cada ocho cuadros gira el dibujo del protagonista, y en el primer paso se guarda una copia de los dos patrones que va a machacar.
-; La animacion del final: cada ocho cuadros gira el dibujo del protagonista, y en el primer paso se guarda una copia de los dos patrones que va a machacar.
-; La animacion del final: cada ocho cuadros gira el dibujo del protagonista, y en el primer paso se guarda una copia de los dos patrones que va a machacar.
-; La animacion del final: cada ocho cuadros gira el dibujo del protagonista, y en el primer paso se guarda una copia de los dos patrones que va a machacar.
-; La animacion del final: cada ocho cuadros gira el dibujo del protagonista, y en el primer paso se guarda una copia de los dos patrones que va a machacar.
 ; La animacion del final: cada ocho cuadros gira el dibujo del protagonista, y en el primer paso se guarda una copia de los dos patrones que va a machacar.
 ; ----------------------------------------------------------------------
 anima_el_fin_de_zona:
@@ -4929,12 +3462,6 @@ gira_los_dos_patrones:
 	ld hl,01bc0h		;5489   ; y su sitio
 
 ; ----------------------------------------------------------------------
-; Gira un dibujo de 16x16, que son cuatro patrones de 8x8, transponiendo cada uno y recolocandolos: el de arriba a la izquierda pasa a arriba a la derecha, y asi.
-; Gira un dibujo de 16x16, que son cuatro patrones de 8x8, transponiendo cada uno y recolocandolos: el de arriba a la izquierda pasa a arriba a la derecha, y asi.
-; Gira un dibujo de 16x16, que son cuatro patrones de 8x8, transponiendo cada uno y recolocandolos: el de arriba a la izquierda pasa a arriba a la derecha, y asi.
-; Gira un dibujo de 16x16, que son cuatro patrones de 8x8, transponiendo cada uno y recolocandolos: el de arriba a la izquierda pasa a arriba a la derecha, y asi.
-; Gira un dibujo de 16x16, que son cuatro patrones de 8x8, transponiendo cada uno y recolocandolos: el de arriba a la izquierda pasa a arriba a la derecha, y asi.
-; Gira un dibujo de 16x16, que son cuatro patrones de 8x8, transponiendo cada uno y recolocandolos: el de arriba a la izquierda pasa a arriba a la derecha, y asi.
 ; Gira un dibujo de 16x16, que son cuatro patrones de 8x8, transponiendo cada uno y recolocandolos: el de arriba a la izquierda pasa a arriba a la derecha, y asi.
 ; ----------------------------------------------------------------------
 gira_un_patron:
@@ -4987,12 +3514,6 @@ saca_un_bit:
 
 ; ----------------------------------------------------------------------
 ; Apunta un destello en la lista de cosas que hay que borrar despues, guardando su casilla y el patron que llevaba, y lo pinta.
-; Apunta un destello en la lista de cosas que hay que borrar despues, guardando su casilla y el patron que llevaba, y lo pinta.
-; Apunta un destello en la lista de cosas que hay que borrar despues, guardando su casilla y el patron que llevaba, y lo pinta.
-; Apunta un destello en la lista de cosas que hay que borrar despues, guardando su casilla y el patron que llevaba, y lo pinta.
-; Apunta un destello en la lista de cosas que hay que borrar despues, guardando su casilla y el patron que llevaba, y lo pinta.
-; Apunta un destello en la lista de cosas que hay que borrar despues, guardando su casilla y el patron que llevaba, y lo pinta.
-; Apunta un destello en la lista de cosas que hay que borrar despues, guardando su casilla y el patron que llevaba, y lo pinta.
 ; ----------------------------------------------------------------------
 apunta_el_destello:
 	push hl			;54eb
@@ -5017,12 +3538,6 @@ apunta_el_destello:
 	jp 0004dh		;5509   ; BIOS WRTVRM - Writes data in VRAM | a la pantalla
 
 ; ----------------------------------------------------------------------
-; Mientras se acaba la zona el protagonista parpadea entre dos dibujos, cada dieciseis cuadros.
-; Mientras se acaba la zona el protagonista parpadea entre dos dibujos, cada dieciseis cuadros.
-; Mientras se acaba la zona el protagonista parpadea entre dos dibujos, cada dieciseis cuadros.
-; Mientras se acaba la zona el protagonista parpadea entre dos dibujos, cada dieciseis cuadros.
-; Mientras se acaba la zona el protagonista parpadea entre dos dibujos, cada dieciseis cuadros.
-; Mientras se acaba la zona el protagonista parpadea entre dos dibujos, cada dieciseis cuadros.
 ; Mientras se acaba la zona el protagonista parpadea entre dos dibujos, cada dieciseis cuadros.
 ; ----------------------------------------------------------------------
 parpadea_al_protagonista:
@@ -5059,12 +3574,6 @@ dibuja_al_enemigo_cuatro:
 	ld hl,0e064h		;5554   ; y su dibujo
 
 ; ----------------------------------------------------------------------
-; Coloca el sprite de un enemigo. Los que estan muertos siguen un guion de animacion contado en 0x1E, y los vivos van directos a su casilla.
-; Coloca el sprite de un enemigo. Los que estan muertos siguen un guion de animacion contado en 0x1E, y los vivos van directos a su casilla.
-; Coloca el sprite de un enemigo. Los que estan muertos siguen un guion de animacion contado en 0x1E, y los vivos van directos a su casilla.
-; Coloca el sprite de un enemigo. Los que estan muertos siguen un guion de animacion contado en 0x1E, y los vivos van directos a su casilla.
-; Coloca el sprite de un enemigo. Los que estan muertos siguen un guion de animacion contado en 0x1E, y los vivos van directos a su casilla.
-; Coloca el sprite de un enemigo. Los que estan muertos siguen un guion de animacion contado en 0x1E, y los vivos van directos a su casilla.
 ; Coloca el sprite de un enemigo. Los que estan muertos siguen un guion de animacion contado en 0x1E, y los vivos van directos a su casilla.
 ; ----------------------------------------------------------------------
 dibuja_un_enemigo:
@@ -5155,12 +3664,6 @@ L_55DF:
 	ret			;55e0
 
 ; ----------------------------------------------------------------------
-; El enemigo grande lleva su propio reloj de 0x1200 cuadros, y al agotarlo vuelve a cero.
-; El enemigo grande lleva su propio reloj de 0x1200 cuadros, y al agotarlo vuelve a cero.
-; El enemigo grande lleva su propio reloj de 0x1200 cuadros, y al agotarlo vuelve a cero.
-; El enemigo grande lleva su propio reloj de 0x1200 cuadros, y al agotarlo vuelve a cero.
-; El enemigo grande lleva su propio reloj de 0x1200 cuadros, y al agotarlo vuelve a cero.
-; El enemigo grande lleva su propio reloj de 0x1200 cuadros, y al agotarlo vuelve a cero.
 ; El enemigo grande lleva su propio reloj de 0x1200 cuadros, y al agotarlo vuelve a cero.
 ; ----------------------------------------------------------------------
 mueve_al_enemigo_grande:
@@ -5267,11 +3770,6 @@ coloca_al_grande:
 
 ; ----------------------------------------------------------------------
 ; Cada tipo de enemigo elige su objetivo de otra forma. El reparto se hace gastando el numero de tipo con `dec a` sucesivos, que es mas corto que una tabla para cinco casos.
-; Cada tipo de enemigo elige su objetivo de otra forma. El reparto se hace gastando el numero de tipo con `dec a` sucesivos, que es mas corto que una tabla para cinco casos.
-; Cada tipo de enemigo elige su objetivo de otra forma. El reparto se hace gastando el numero de tipo con `dec a` sucesivos, que es mas corto que una tabla para cinco casos.
-; Cada tipo de enemigo elige su objetivo de otra forma. El reparto se hace gastando el numero de tipo con `dec a` sucesivos, que es mas corto que una tabla para cinco casos.
-; Cada tipo de enemigo elige su objetivo de otra forma. El reparto se hace gastando el numero de tipo con `dec a` sucesivos, que es mas corto que una tabla para cinco casos.
-; Cada tipo de enemigo elige su objetivo de otra forma. El reparto se hace gastando el numero de tipo con `dec a` sucesivos, que es mas corto que una tabla para cinco casos.
 ; ----------------------------------------------------------------------
 reparte_por_tipo_de_enemigo:
 	ld a,(ix+019h)		;569f   ; el tipo
@@ -5318,11 +3816,6 @@ borra_el_estado_del_grande:
 
 ; ----------------------------------------------------------------------
 ; El tipo 1 no va donde esta el jugador, sino donde VA A ESTAR: la tabla de 0x5776 le da un adelanto en la direccion que el jugador lleva pulsada, y persigue a ese punto.
-; El tipo 1 no va donde esta el jugador, sino donde VA A ESTAR: la tabla de 0x5776 le da un adelanto en la direccion que el jugador lleva pulsada, y persigue a ese punto.
-; El tipo 1 no va donde esta el jugador, sino donde VA A ESTAR: la tabla de 0x5776 le da un adelanto en la direccion que el jugador lleva pulsada, y persigue a ese punto.
-; El tipo 1 no va donde esta el jugador, sino donde VA A ESTAR: la tabla de 0x5776 le da un adelanto en la direccion que el jugador lleva pulsada, y persigue a ese punto.
-; El tipo 1 no va donde esta el jugador, sino donde VA A ESTAR: la tabla de 0x5776 le da un adelanto en la direccion que el jugador lleva pulsada, y persigue a ese punto.
-; El tipo 1 no va donde esta el jugador, sino donde VA A ESTAR: la tabla de 0x5776 le da un adelanto en la direccion que el jugador lleva pulsada, y persigue a ese punto.
 ; ----------------------------------------------------------------------
 persigue_cortando_el_paso:
 	ld a,(0e135h)		;5703   ; la direccion del jugador
@@ -5341,11 +3834,6 @@ persigue_el_objetivo:
 	jr L_5768		;5724
 
 ; ----------------------------------------------------------------------
-; El motor de persecucion: mide cuanto le falta en cada eje, se queda con el eje donde este mas lejos y saca el sentido. Nunca devuelve la media vuelta, que es lo que evita que se queden temblando.
-; El motor de persecucion: mide cuanto le falta en cada eje, se queda con el eje donde este mas lejos y saca el sentido. Nunca devuelve la media vuelta, que es lo que evita que se queden temblando.
-; El motor de persecucion: mide cuanto le falta en cada eje, se queda con el eje donde este mas lejos y saca el sentido. Nunca devuelve la media vuelta, que es lo que evita que se queden temblando.
-; El motor de persecucion: mide cuanto le falta en cada eje, se queda con el eje donde este mas lejos y saca el sentido. Nunca devuelve la media vuelta, que es lo que evita que se queden temblando.
-; El motor de persecucion: mide cuanto le falta en cada eje, se queda con el eje donde este mas lejos y saca el sentido. Nunca devuelve la media vuelta, que es lo que evita que se queden temblando.
 ; El motor de persecucion: mide cuanto le falta en cada eje, se queda con el eje donde este mas lejos y saca el sentido. Nunca devuelve la media vuelta, que es lo que evita que se queden temblando.
 ; ----------------------------------------------------------------------
 elige_la_direccion_hacia_el_objetivo:
@@ -5427,11 +3915,6 @@ DATA_direcciones_5776:
 
 ; ----------------------------------------------------------------------
 ; El tipo 2 no persigue: hace lo MISMO que el jugador, pero con el eje horizontal invertido. Si el jugador va a la izquierda, este va a la derecha.
-; El tipo 2 no persigue: hace lo MISMO que el jugador, pero con el eje horizontal invertido. Si el jugador va a la izquierda, este va a la derecha.
-; El tipo 2 no persigue: hace lo MISMO que el jugador, pero con el eje horizontal invertido. Si el jugador va a la izquierda, este va a la derecha.
-; El tipo 2 no persigue: hace lo MISMO que el jugador, pero con el eje horizontal invertido. Si el jugador va a la izquierda, este va a la derecha.
-; El tipo 2 no persigue: hace lo MISMO que el jugador, pero con el eje horizontal invertido. Si el jugador va a la izquierda, este va a la derecha.
-; El tipo 2 no persigue: hace lo MISMO que el jugador, pero con el eje horizontal invertido. Si el jugador va a la izquierda, este va a la derecha.
 ; ----------------------------------------------------------------------
 imita_al_jugador:
 	ld a,(ix+026h)		;5786   ; acaba de girar?
@@ -5464,11 +3947,6 @@ limpia_y_mueve:
 	jp mueve_al_enemigo_simple		;57b5   ; y lo dibuja
 
 ; ----------------------------------------------------------------------
-; El tipo 3 se dirige al punto ESPEJO del protagonista: en vez de ir hacia el, va hacia donde estaria reflejado, lo que le hace rondar la pantalla en vez de perseguir.
-; El tipo 3 se dirige al punto ESPEJO del protagonista: en vez de ir hacia el, va hacia donde estaria reflejado, lo que le hace rondar la pantalla en vez de perseguir.
-; El tipo 3 se dirige al punto ESPEJO del protagonista: en vez de ir hacia el, va hacia donde estaria reflejado, lo que le hace rondar la pantalla en vez de perseguir.
-; El tipo 3 se dirige al punto ESPEJO del protagonista: en vez de ir hacia el, va hacia donde estaria reflejado, lo que le hace rondar la pantalla en vez de perseguir.
-; El tipo 3 se dirige al punto ESPEJO del protagonista: en vez de ir hacia el, va hacia donde estaria reflejado, lo que le hace rondar la pantalla en vez de perseguir.
 ; El tipo 3 se dirige al punto ESPEJO del protagonista: en vez de ir hacia el, va hacia donde estaria reflejado, lo que le hace rondar la pantalla en vez de perseguir.
 ; ----------------------------------------------------------------------
 va_al_punto_espejo:
@@ -5513,11 +3991,6 @@ L_57EB:
 
 ; ----------------------------------------------------------------------
 ; El tipo 4 es como el 1 pero con la otra tabla de adelanto, la de 0x577e: corta el paso mas cerca.
-; El tipo 4 es como el 1 pero con la otra tabla de adelanto, la de 0x577e: corta el paso mas cerca.
-; El tipo 4 es como el 1 pero con la otra tabla de adelanto, la de 0x577e: corta el paso mas cerca.
-; El tipo 4 es como el 1 pero con la otra tabla de adelanto, la de 0x577e: corta el paso mas cerca.
-; El tipo 4 es como el 1 pero con la otra tabla de adelanto, la de 0x577e: corta el paso mas cerca.
-; El tipo 4 es como el 1 pero con la otra tabla de adelanto, la de 0x577e: corta el paso mas cerca.
 ; ----------------------------------------------------------------------
 persigue_con_el_otro_adelanto:
 	ld a,(0e135h)		;57ed   ; la direccion del jugador
@@ -5554,10 +4027,6 @@ DATA_tabla_5812:
 
 
 ; ----------------------------------------------------------------------
-; El grande alterna dos comportamientos con la bandera de 0xE2D8: o recorre un camino fijo sacado de la tabla de 0x5812, o se va derecho al primer objeto que quede en la lista.
-; El grande alterna dos comportamientos con la bandera de 0xE2D8: o recorre un camino fijo sacado de la tabla de 0x5812, o se va derecho al primer objeto que quede en la lista.
-; El grande alterna dos comportamientos con la bandera de 0xE2D8: o recorre un camino fijo sacado de la tabla de 0x5812, o se va derecho al primer objeto que quede en la lista.
-; El grande alterna dos comportamientos con la bandera de 0xE2D8: o recorre un camino fijo sacado de la tabla de 0x5812, o se va derecho al primer objeto que quede en la lista.
 ; El grande alterna dos comportamientos con la bandera de 0xE2D8: o recorre un camino fijo sacado de la tabla de 0x5812, o se va derecho al primer objeto que quede en la lista.
 ; ----------------------------------------------------------------------
 elige_el_objetivo_del_grande:
@@ -5603,10 +4072,6 @@ mueve_al_grande:
 	jp mueve_y_dibuja		;5868   ; el mismo movimiento que los demas
 
 ; ----------------------------------------------------------------------
-; El grande borra el objeto sobre el que esta: lo busca en la lista, devuelve a la pantalla lo que habia debajo y lo saca de las dos listas. El jugador pierde ese objeto para siempre.
-; El grande borra el objeto sobre el que esta: lo busca en la lista, devuelve a la pantalla lo que habia debajo y lo saca de las dos listas. El jugador pierde ese objeto para siempre.
-; El grande borra el objeto sobre el que esta: lo busca en la lista, devuelve a la pantalla lo que habia debajo y lo saca de las dos listas. El jugador pierde ese objeto para siempre.
-; El grande borra el objeto sobre el que esta: lo busca en la lista, devuelve a la pantalla lo que habia debajo y lo saca de las dos listas. El jugador pierde ese objeto para siempre.
 ; El grande borra el objeto sobre el que esta: lo busca en la lista, devuelve a la pantalla lo que habia debajo y lo saca de las dos listas. El jugador pierde ese objeto para siempre.
 ; ----------------------------------------------------------------------
 se_come_un_objeto:
@@ -5664,10 +4129,6 @@ saca_el_objeto_comido:
 
 ; ----------------------------------------------------------------------
 ; Un paso de enemigo: si tiene suelo debajo anda, y si no, mira que hay en la casilla para decidir. El grande tiene permiso para pisar las casillas de meta.
-; Un paso de enemigo: si tiene suelo debajo anda, y si no, mira que hay en la casilla para decidir. El grande tiene permiso para pisar las casillas de meta.
-; Un paso de enemigo: si tiene suelo debajo anda, y si no, mira que hay en la casilla para decidir. El grande tiene permiso para pisar las casillas de meta.
-; Un paso de enemigo: si tiene suelo debajo anda, y si no, mira que hay en la casilla para decidir. El grande tiene permiso para pisar las casillas de meta.
-; Un paso de enemigo: si tiene suelo debajo anda, y si no, mira que hay en la casilla para decidir. El grande tiene permiso para pisar las casillas de meta.
 ; ----------------------------------------------------------------------
 mueve_al_enemigo:
 	call esta_en_el_suelo		;58d3   ; hay suelo?
@@ -5704,10 +4165,6 @@ recupera_el_objetivo:
 	ld h,(ix+01ch)		;590d
 
 ; ----------------------------------------------------------------------
-; Cuando no puede seguir recto, mira las casillas de alrededor y cuenta por cuantos lados puede salir, para decidir si gira o se da la vuelta.
-; Cuando no puede seguir recto, mira las casillas de alrededor y cuenta por cuantos lados puede salir, para decidir si gira o se da la vuelta.
-; Cuando no puede seguir recto, mira las casillas de alrededor y cuenta por cuantos lados puede salir, para decidir si gira o se da la vuelta.
-; Cuando no puede seguir recto, mira las casillas de alrededor y cuenta por cuantos lados puede salir, para decidir si gira o se da la vuelta.
 ; Cuando no puede seguir recto, mira las casillas de alrededor y cuenta por cuantos lados puede salir, para decidir si gira o se da la vuelta.
 ; ----------------------------------------------------------------------
 busca_por_donde_rodear:
@@ -5831,9 +4288,6 @@ mira_la_meta:
 
 ; ----------------------------------------------------------------------
 ; Recoloca al enemigo tras el paso: elige su dibujo, deja que gire si esta dentro del area util y vuelve a leer el decorado de alrededor.
-; Recoloca al enemigo tras el paso: elige su dibujo, deja que gire si esta dentro del area util y vuelve a leer el decorado de alrededor.
-; Recoloca al enemigo tras el paso: elige su dibujo, deja que gire si esta dentro del area util y vuelve a leer el decorado de alrededor.
-; Recoloca al enemigo tras el paso: elige su dibujo, deja que gire si esta dentro del area util y vuelve a leer el decorado de alrededor.
 ; ----------------------------------------------------------------------
 recoloca_al_enemigo:
 	call elige_el_dibujo		;59d9   ; su dibujo
@@ -5848,9 +4302,6 @@ cuadra_y_lee:
 	jp lee_el_decorado_alrededor		;59ed   ; y vuelve a leer el decorado
 
 ; ----------------------------------------------------------------------
-; El empujon: si el protagonista esta cuadrado y tiene un bloque delante, mira si hay hueco al otro lado -y que no haya nadie- y lo desplaza una casilla.
-; El empujon: si el protagonista esta cuadrado y tiene un bloque delante, mira si hay hueco al otro lado -y que no haya nadie- y lo desplaza una casilla.
-; El empujon: si el protagonista esta cuadrado y tiene un bloque delante, mira si hay hueco al otro lado -y que no haya nadie- y lo desplaza una casilla.
 ; El empujon: si el protagonista esta cuadrado y tiene un bloque delante, mira si hay hueco al otro lado -y que no haya nadie- y lo desplaza una casilla.
 ; ----------------------------------------------------------------------
 empuja_el_bloque:
@@ -5963,8 +4414,6 @@ mira_que_no_pise_a_nadie:
 
 ; ----------------------------------------------------------------------
 ; Compara dos casillas, byte a byte. Devuelve Z cuando coinciden.
-; Compara dos casillas, byte a byte. Devuelve Z cuando coinciden.
-; Compara dos casillas, byte a byte. Devuelve Z cuando coinciden.
 ; ----------------------------------------------------------------------
 son_la_misma_casilla:
 	ld a,e			;5ad6   ; el byte bajo
@@ -5990,8 +4439,6 @@ DATA_tabla_5adc:
 
 
 ; ----------------------------------------------------------------------
-; Antes de empujar hay que saber por donde andan: apunta la casilla de cada enemigo, o 0xFFFF si esta escondido.
-; Antes de empujar hay que saber por donde andan: apunta la casilla de cada enemigo, o 0xFFFF si esta escondido.
 ; Antes de empujar hay que saber por donde andan: apunta la casilla de cada enemigo, o 0xFFFF si esta escondido.
 ; ----------------------------------------------------------------------
 apunta_donde_estan_los_enemigos:
@@ -6019,8 +4466,6 @@ marca_enemigo_ausente:
 	ret			;5b0a
 
 ; ----------------------------------------------------------------------
-; A partir de la zona 10, si el jugador se esta quieto demasiado tiempo, el juego le mete prisa: a los 64 cuadros sin mover el mando, arranca el derrumbe.
-; A partir de la zona 10, si el jugador se esta quieto demasiado tiempo, el juego le mete prisa: a los 64 cuadros sin mover el mando, arranca el derrumbe.
 ; A partir de la zona 10, si el jugador se esta quieto demasiado tiempo, el juego le mete prisa: a los 64 cuadros sin mover el mando, arranca el derrumbe.
 ; ----------------------------------------------------------------------
 cuenta_para_el_derrumbe:
@@ -6077,7 +4522,6 @@ sigue_buscando:
 	inc de			;5b6f
 
 ; ----------------------------------------------------------------------
-; Recorre la columna del protagonista buscando por donde se abre el derrumbe, y luego usa su fila para sacar de la tabla de 0xE348 la casilla que le toca.
 ; Recorre la columna del protagonista buscando por donde se abre el derrumbe, y luego usa su fila para sacar de la tabla de 0xE348 la casilla que le toca.
 ; ----------------------------------------------------------------------
 mira_donde_cae_el_derrumbe:
@@ -6179,7 +4623,6 @@ L_5C08:
 
 ; ----------------------------------------------------------------------
 ; Enciende el derrumbe y coloca sus dos sprites, eligiendo el dibujo y el desplazamiento segun de que lado viene.
-; Enciende el derrumbe y coloca sus dos sprites, eligiendo el dibujo y el desplazamiento segun de que lado viene.
 ; ----------------------------------------------------------------------
 arranca_el_derrumbe:
 	ld hl,0e0eeh		;5c14   ; el hueco de sprite del derrumbe
@@ -6216,7 +4659,6 @@ L_5C41:
 	ret			;5c4b
 
 ; ----------------------------------------------------------------------
-; Comprueba si el derrumbe alcanza al protagonista: se le suma un margen de tres y cuatro pixeles a la posicion del derrumbe y se mide la distancia.
 ; Comprueba si el derrumbe alcanza al protagonista: se le suma un margen de tres y cuatro pixeles a la posicion del derrumbe y se mide la distancia.
 ; ----------------------------------------------------------------------
 mira_si_le_pilla_el_derrumbe:
@@ -6584,25 +5026,6 @@ DATA_datos_de_zona:
 
 
 ; ----------------------------------------------------------------------
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
-; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
 ; Pinta la zona entera desde el mapa ya descomprimido en 0xE0B0. Cada byte del mapa es un metatile, un cuadro de 2x2 celdas cuyos cuatro indices estan en la tabla de 0x6ef3.
 ; ----------------------------------------------------------------------
 pinta_el_mapa_de_la_zona:
@@ -7207,8 +5630,6 @@ DATA_grafico_79aa:
 
 ; ----------------------------------------------------------------------
 ; Pide un efecto de sonido. Guarda TODOS los registros -incluidos IX e IY- porque la llaman desde cualquier sitio del juego, y corta las interrupciones para que el manejador no le pise el PSG a medias.
-; Pide un efecto de sonido. Guarda TODOS los registros -incluidos IX e IY- porque la llaman desde cualquier sitio del juego, y corta las interrupciones para que el manejador no le pise el PSG a medias.
-; Pide un efecto de sonido. Guarda TODOS los registros -incluidos IX e IY- porque la llaman desde cualquier sitio del juego, y corta las interrupciones para que el manejador no le pise el PSG a medias.
 ; ----------------------------------------------------------------------
 suena:
 	di			;7ad4   ; el manejador tambien toca el PSG
@@ -7230,8 +5651,6 @@ suena:
 
 ; ----------------------------------------------------------------------
 ; Reparte el efecto entre los dos juegos de canales segun su numero: los de menos de 10 van a un sitio, los de 10 y 11 a otro y el resto a un tercero.
-; Reparte el efecto entre los dos juegos de canales segun su numero: los de menos de 10 van a un sitio, los de 10 y 11 a otro y el resto a un tercero.
-; Reparte el efecto entre los dos juegos de canales segun su numero: los de menos de 10 van a un sitio, los de 10 y 11 a otro y el resto a un tercero.
 ; ----------------------------------------------------------------------
 elige_el_canal_del_efecto:
 	ld c,a			;7aea   ; el numero de efecto
@@ -7251,8 +5670,6 @@ efecto_de_prioridad_baja:
 	ld hl,0e036h		;7b02   ; van a su propio bloque
 
 ; ----------------------------------------------------------------------
-; La regla de prioridad: si lo que esta sonando tiene un numero MAYOR o igual, el efecto nuevo no entra. Asi los avisos importantes no se pierden.
-; La regla de prioridad: si lo que esta sonando tiene un numero MAYOR o igual, el efecto nuevo no entra. Asi los avisos importantes no se pierden.
 ; La regla de prioridad: si lo que esta sonando tiene un numero MAYOR o igual, el efecto nuevo no entra. Asi los avisos importantes no se pierden.
 ; ----------------------------------------------------------------------
 compara_la_prioridad:
@@ -7294,8 +5711,6 @@ monta_un_canal:
 
 ; ----------------------------------------------------------------------
 ; Da un paso del guion del canal: si ha llegado al final de la frase, la cierra; si no, coge la nota y su duracion.
-; Da un paso del guion del canal: si ha llegado al final de la frase, la cierra; si no, coge la nota y su duracion.
-; Da un paso del guion del canal: si ha llegado al final de la frase, la cierra; si no, coge la nota y su duracion.
 ; ----------------------------------------------------------------------
 avanza_el_guion:
 	inc hl			;7b35
@@ -7331,8 +5746,6 @@ apaga_los_canales:
 
 ; ----------------------------------------------------------------------
 ; Lo que el sonido hace en cada cuadro: recorre los tres canales del PSG y, en cada uno, o sigue el guion que tenga o lo deja callado.
-; Lo que el sonido hace en cada cuadro: recorre los tres canales del PSG y, en cada uno, o sigue el guion que tenga o lo deja callado.
-; Lo que el sonido hace en cada cuadro: recorre los tres canales del PSG y, en cada uno, o sigue el guion que tenga o lo deja callado.
 ; ----------------------------------------------------------------------
 atiende_el_sonido:
 	ld a,(0e042h)		;7b67   ; el estado de los canales
@@ -7367,7 +5780,6 @@ L_7B90:
 
 ; ----------------------------------------------------------------------
 ; Lee el byte del guion del canal y decide que es: 0xFE cierra la frase, un valor mayor la termina, y si no, el medio byte alto dice el tipo de orden y el bajo su argumento.
-; Lee el byte del guion del canal y decide que es: 0xFE cierra la frase, un valor mayor la termina, y si no, el medio byte alto dice el tipo de orden y el bajo su argumento.
 ; ----------------------------------------------------------------------
 lee_el_guion_del_canal:
 	ld l,(ix+003h)		;7b9b   ; el puntero al guion
@@ -7387,7 +5799,6 @@ lee_el_guion_del_canal:
 	inc hl			;7bbc   ; y se pasa al byte siguiente
 
 ; ----------------------------------------------------------------------
-; Toca la nota: el medio byte alto es la octava y el bajo, junto con el byte que sigue, el tono que va a los dos registros del PSG.
 ; Toca la nota: el medio byte alto es la octava y el bajo, junto con el byte que sigue, el tono que va a los dos registros del PSG.
 ; ----------------------------------------------------------------------
 toca_la_nota:
