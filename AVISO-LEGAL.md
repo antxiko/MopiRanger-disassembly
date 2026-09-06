@@ -14,7 +14,7 @@ licencia de `LICENSE`.
 
 ## Que hay en este repositorio
 
-El fichero `src/tennis.asm` es el desensamblado comentado del cartucho. Se publica
+El fichero `src/mopiranger.asm` es el desensamblado comentado del cartucho. Se publica
 para la **preservacion, el estudio y la documentacion** de un titulo que es
 parte de la historia del software del MSX.
 
@@ -22,7 +22,7 @@ La imagen del cartucho (`.rom`) **no** se distribuye aqui. Quien quiera volver a
 montar el listado tiene que poner la suya, y el `Makefile` comprueba su sha256
 antes de hacer nada.
 
-Las imagenes que produce `tools/graficos.py` no son ilustraciones traidas de
+Las imagenes que produce `tools/dibuja.py` no son ilustraciones traidas de
 fuera: se dibujan leyendo los propios bloques del cartucho, en las direcciones
 que dice el listado. Son parte de la prueba de que la lectura del binario es
 correcta: si estuviera mal, saldria ruido.

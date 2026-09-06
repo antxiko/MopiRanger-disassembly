@@ -14,7 +14,7 @@ analysis and the documentation. That is published under the licence in
 
 ## What is in this repository
 
-The file `src/tennis.asm` is the commented disassembly of the cartridge. It is
+The file `src/mopiranger.asm` is the commented disassembly of the cartridge. It is
 published for the **preservation, study and documentation** of a title that is
 part of MSX software history.
 
@@ -22,7 +22,7 @@ The cartridge image (`.rom`) is **not** distributed here. Anyone who wants to
 rebuild the listing has to supply their own, and the `Makefile` checks its
 sha256 before doing anything.
 
-The pictures produced by `tools/graficos.py` are not illustrations brought in
+The pictures produced by `tools/dibuja.py` are not illustrations brought in
 from outside: they are drawn by reading the cartridge's own blocks, at the
 addresses the listing gives. They are part of the proof that the reading of the
 binary is right: if it were wrong, they would come out as noise.
