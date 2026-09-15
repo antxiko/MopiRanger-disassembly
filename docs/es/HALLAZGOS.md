@@ -27,6 +27,27 @@ Y la cifra no es arbitraria. En japones los numeros se pueden leer por su
 sonido: **5 = go, 7 = na, 3 = mi**, o sea ***go-na-mi***. Es un huevo de pascua
 que la casa repitio en muchos de sus juegos, tambien en los recreativos.
 
+## El cartucho se defiende: proteccion anticopia
+
+Dos instrucciones del arranque escriben dentro del propio cartucho:
+
+- **0x406A** deja un `pop hl` y un `ret` encima del `djnz` de 0x4146.
+  Lo hace byte a byte, y el `0xE1` no se lo inventa: lo lee de un
+  `pop hl` que ya estaba en la ROM.
+- **0x40A5** deja un cero en 0x44DF, que no es un dato: es el operando del `jp`
+  de 0x44DE. En memoria eso lo convierte en `jp 00000h`, un reinicio en seco.
+
+**Ninguna de las dos hace nada aqui.** El cartucho corre desde ROM, y la ROM no admite
+escritura: por eso parecen codigo muerto. No lo son. Un cartucho pirateado es una
+copia cargada en **RAM**, y ahi la escritura si cuela y rompe el juego. Que no
+haga nada en el original es justo la gracia.
+
+No es una idea suelta de este cartucho: el mismo par —una escritura sobre un
+`djnz` y otra sobre el operando de un `jp`— aparece en diez cartuchos de esta
+serie, siempre en las mismas dos rutinas del arranque. Las identifico **Manuel
+Pazos** en su desensamblado del RC-727, donde las llamo `ReadKeys_AC` y
+`VRAM_writeAC`.
+
 ## La demostracion es una partida grabada
 
 Cuando nadie juega, el muneco se mueve solo. No hay ninguna rutina que decida

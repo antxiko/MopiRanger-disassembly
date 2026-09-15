@@ -9,7 +9,7 @@ A complete, commented disassembly of the MSX1 cartridge **Mopi Ranger**
 |---|---|
 | Of the binary explained | **100%** — 0 bytes unaccounted for, of 16,384 |
 | Reassembles | **byte for byte**, to the same sha256 |
-| Listing commented | **52.9%** — 2,012 comments over 3,802 instructions |
+| Listing commented | **53.0%** — 2,016 comments over 3,802 instructions |
 | Routines below the 10% bar | **0** of 512 |
 
 ## What is in here

@@ -99,6 +99,11 @@ audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
          jp suma_al_marcador</code></pre>
 <p>The two figures agree on their own: the caption says 5730 and the instruction adds 5730.</p>
 <p>And the number is not arbitrary. Japanese numbers can be read by their sound: <b>5 = go, 7 = na, 3 = mi</b>, that is <em><b>go-na-mi</b></em>. It is an easter egg the company reused across many of its games, arcade ones included.</p>
+<h2 id="the-cartridge-defends-itself-copy-protection">The cartridge defends itself: copy protection</h2>
+<p>Two instructions in the start-up write inside the cartridge itself:</p>
+<ul><li><b>0x406A</b> puts a <code>pop hl</code> and a <code>ret</code> over the <code>djnz</code> at 0x4146. It does it byte by byte, and it does not invent the <code>0xE1</code>: it reads it from a <code>pop hl</code> already in the ROM.</li><li><b>0x40A5</b> leaves a zero at 0x44DF, which is not data: it is the operand of the <code>jp</code> at 0x44DE. In memory that turns it into <code>jp 00000h</code>, a dead reset.</li></ul>
+<p><b>Neither of them does anything here.</b> The cartridge runs from ROM, and ROM takes no writes: that is why they look like dead code. They are not. A pirated cartridge is a copy loaded into <b>RAM</b>, and there the write does land and breaks the game. Doing nothing on the original is exactly the point.</p>
+<p>This is no one-off idea in this cartridge: the same pair —a write over a <code>djnz</code> and another over the operand of a <code>jp</code>— turns up in ten cartridges of this series, always in the same two start-up routines. <b>Manuel Pazos</b> identified them in his disassembly of RC-727, where he named them <code>ReadKeys_AC</code> and <code>VRAM_writeAC</code>.</p>
 <h2 id="the-attract-mode-is-a-recorded-game">The attract mode is a recorded game</h2>
 <p>When nobody is playing, the character moves by itself. No routine decides anything: there are <b>77 recorded keypresses</b>.</p>
 <p>They are compressed at 0x5D82, unpacked to 0xE342, and the routine at 0x468F reads them one every two frames and drops them <b>where the joystick reading would go</b>. The script ends with an 0xFF, which is what clears the flag and ends the attract mode.</p>

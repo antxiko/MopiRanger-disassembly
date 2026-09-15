@@ -245,6 +245,10 @@ C 0x4047 (0xE006) es el candado
 C 0x4053 el reparto de escenas, que es el cuerpo del cuadro
 C 0x4056 suelta el candado
 C 0x405d y devuelve el control con las interrupciones abiertas
+C 0x4067 lee el 0xE1 de 0x407F, que es el `pop hl` con el que arranca despacha_por_indice: la trampa se sirve de un opcode que ya estaba en la ROM
+C 0x406a PROTECCION ANTICOPIA: ese 0xE1 va encima del `djnz` de 0x4146, el primer eslabon de la cadena del arranque
+C 0x406d y el 0xC9 es el `ret` que le pone detras
+C 0x406f en 0x4147, el segundo byte del `djnz`. Desde ROM la escritura NO llega -la ROM no admite escritura- y por eso parece codigo muerto; en una copia cargada en RAM si cuela, el `djnz` queda en `pop hl / ret` y la cadena se corta ahi. Manuel Pazos la identifico en el RC-727, donde esta escrita byte a byte, como ReadKeys_AC
 L 0x407f despacha_por_indice
 B 0x407f El reparto por indice de todo el cartucho. El `pop hl` recupera su propia direccion de retorno, que es la TABLA de punteros pegada justo detras del `call`: por eso las tablas de despacho de este juego no se cargan, se escriben en linea.
 C 0x407f HL = la direccion de retorno, o sea la tabla que sigue al call
@@ -408,7 +412,7 @@ C 0x40a0 se queda con los cinco bits altos
 C 0x40a2 y cambia los dos bytes de sitio
 L 0x40a5 borra_trozo_de_vram
 B 0x40a5 Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
-C 0x40a5 escribe en la ROM: no tiene efecto ninguno
+C 0x40a5 LA OTRA PROTECCION ANTICOPIA: DE cae en 0x44DF, que no es un dato sino el operando del `jp L_45FF` de 0x44DE. Desde ROM no llega; en RAM ese salto se iria a donde apuntase DE. Es VRAM_writeAC en el desensamblado del RC-727 que hizo Manuel Pazos
 C 0x40a9 y el trabajo lo hace la BIOS
 L 0x40ac reparte_la_escena
 B 0x40ac El cuerpo de cada cuadro: mira en que estado esta el juego y reparte a la escena que toque, con la tabla de nueve punteros pegada al call.

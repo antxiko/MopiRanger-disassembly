@@ -73,10 +73,10 @@ L_405D:
 	ei			;4065
 	ret			;4066
 L_4067:
-	ld a,(despacha_por_indice)		;4067
-	ld (04146h),a		;406a
-	ld a,0c9h		;406d
-	ld (04147h),a		;406f
+	ld a,(despacha_por_indice)		;4067   ; lee el 0xE1 de 0x407F, que es el `pop hl` con el que arranca despacha_por_indice: la trampa se sirve de un opcode que ya estaba en la ROM
+	ld (04146h),a		;406a   ; PROTECCION ANTICOPIA: ese 0xE1 va encima del `djnz` de 0x4146, el primer eslabon de la cadena del arranque
+	ld a,0c9h		;406d   ; y el 0xC9 es el `ret` que le pone detras
+	ld (04147h),a		;406f   ; en 0x4147, el segundo byte del `djnz`. Desde ROM la escritura NO llega -la ROM no admite escritura- y por eso parece codigo muerto; en una copia cargada en RAM si cuela, el `djnz` queda en `pop hl / ret` y la cadena se corta ahi. Manuel Pazos la identifico en el RC-727, donde esta escrita byte a byte, como ReadKeys_AC
 	jp 00047h		;4072   ; BIOS WRTVDP - Writes data in the VDP-register
 
 ; ----------------------------------------------------------------------
@@ -149,7 +149,7 @@ direccion_de_patron:
 ; Rellena un trozo de memoria de video llamando a la BIOS. El `ld (044dfh),de` de delante escribe en la propia ROM del cartucho, o sea que NO hace nada: la pagina 1 no admite escritura. Se deja tal cual porque el binario es lo que manda, pero es una instruccion muerta.
 ; ----------------------------------------------------------------------
 borra_trozo_de_vram:
-	ld (044dfh),de		;40a5   ; escribe en la ROM: no tiene efecto ninguno
+	ld (044dfh),de		;40a5   ; LA OTRA PROTECCION ANTICOPIA: DE cae en 0x44DF, que no es un dato sino el operando del `jp L_45FF` de 0x44DE. Desde ROM no llega; en RAM ese salto se iria a donde apuntase DE. Es VRAM_writeAC en el desensamblado del RC-727 que hizo Manuel Pazos
 	jp 00056h		;40a9   ; BIOS FILVRM - Fills VRAM with value | y el trabajo lo hace la BIOS
 
 ; ----------------------------------------------------------------------

@@ -9,7 +9,7 @@ Desensamblado completo y comentado del cartucho de MSX1 **Mopi Ranger**
 |---|---|
 | Del binario explicado | **100 %** — 0 bytes sin identificar, de 16.384 |
 | Reensambla | **byte a byte**, al mismo sha256 |
-| Listado comentado | **52,9 %** — 2.012 comentarios sobre 3.802 instrucciones |
+| Listado comentado | **53,0 %** — 2.016 comentarios sobre 3.802 instrucciones |
 | Rutinas por debajo del liston del 10 % | **0** de 512 |
 
 ## Que hay aqui

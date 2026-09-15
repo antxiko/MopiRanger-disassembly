@@ -27,8 +27,8 @@ RUTINAS = 512
 ZONAS = 50
 MAPAS = 25
 SPRITES = 35
-DENSIDAD = "52,9"
-DENSIDAD_EN = "52.9"
+DENSIDAD = "53,0"
+DENSIDAD_EN = "53.0"
 
 
 def mil(n, idioma):

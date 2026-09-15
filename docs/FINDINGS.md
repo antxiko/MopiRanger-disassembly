@@ -28,6 +28,27 @@ And the number is not arbitrary. Japanese numbers can be read by their sound:
 **5 = go, 7 = na, 3 = mi**, that is ***go-na-mi***. It is an easter egg the
 company reused across many of its games, arcade ones included.
 
+## The cartridge defends itself: copy protection
+
+Two instructions in the start-up write inside the cartridge itself:
+
+- **0x406A** puts a `pop hl` and a `ret` over the `djnz` at 0x4146.
+  It does it byte by byte, and it does not invent the `0xE1`: it reads
+  it from a `pop hl` already in the ROM.
+- **0x40A5** leaves a zero at 0x44DF, which is not data: it is the operand of
+  the `jp` at 0x44DE. In memory that turns it into `jp 00000h`, a dead reset.
+
+**Neither of them does anything here.** The cartridge runs from ROM, and ROM takes no
+writes: that is why they look like dead code. They are not. A pirated cartridge is a
+copy loaded into **RAM**, and there the write does land and breaks the game.
+Doing nothing on the original is exactly the point.
+
+This is no one-off idea in this cartridge: the same pair —a write over a `djnz`
+and another over the operand of a `jp`— turns up in ten cartridges of this
+series, always in the same two start-up routines. **Manuel Pazos** identified
+them in his disassembly of RC-727, where he named them `ReadKeys_AC` and
+`VRAM_writeAC`.
+
 ## The attract mode is a recorded game
 
 When nobody is playing, the character moves by itself. No routine decides

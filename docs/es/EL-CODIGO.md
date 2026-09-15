@@ -102,4 +102,4 @@ manejador tambien toca el PSG.
 
 Los nombres de rutina son descriptivos y los comentarios van anclados a
 direccion en `src/mopiranger.notes`, no escritos dentro del `.asm`. El listado
-esta comentado al **52,9 %** y no queda ninguna rutina por debajo del 10 %.
+esta comentado al **53,0 %** y no queda ninguna rutina por debajo del 10 %.

@@ -102,4 +102,4 @@ the handler touches the PSG too.
 
 Routine names are descriptive, and the comments are anchored to addresses in
 `src/mopiranger.notes` rather than written into the `.asm`. The listing is
-commented at **52.9%** and no routine is left below 10%.
+commented at **53.0%** and no routine is left below 10%.
