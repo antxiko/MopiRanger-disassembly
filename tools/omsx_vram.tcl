@@ -23,7 +23,7 @@ proc opcion {nombre porDefecto} {
     return $porDefecto
 }
 
-set ::SALIDA [opcion KV_SALIDA {C:/Users/Antxiko/Documents/DES_ASM/KINGSVALLEY_DISAM/work/omsx}]
+set ::SALIDA [opcion KV_SALIDA {C:/Users/Antxiko/Documents/DES_ASM/desensamblados/KINGSVALLEY_DISAM/work/omsx}]
 file mkdir $::SALIDA
 set ::n 0
 
