@@ -103,3 +103,30 @@ the handler touches the PSG too.
 Routine names are descriptive, and the comments are anchored to addresses in
 `src/mopiranger.notes` rather than written into the `.asm`. The listing is
 commented at **53.0%** and no routine is left below 10%.
+
+## Code shared with other Konami cartridges
+
+This disassembly has been compared, instruction by instruction, with
+every other Konami one in the series. A block counts when the same
+instructions, at least six of them from a label to its `ret` or its
+unconditional jump, are in both cartridges; the addresses are left
+aside, because they change from one cartridge to the next. Of the
+other 57, **52** have at least one block in common with this one;
+these are the ones that share the most:
+
+| Cartridge | Blocks | Instructions | For example (here = there) |
+|---|---:|---:|---|
+| [The Goonies](https://antxiko.github.io/Goonies-disassembly/) | 18 | 178 | `avanza_la_cortinilla` (0x46F5) = `baja_un_paso` |
+| [Yie Ar Kung-Fu](https://antxiko.github.io/YieArKungFu-disassembly/) | 18 | 247 | `suma_al_marcador` (0x43B2) = `suma_a_la_puntuacion` |
+| [Knightmare](https://antxiko.github.io/Knightmare-disassembly/) | 16 | 173 | `manejador_de_interrupcion` (0x4043) = `cada_cuadro` |
+| [Sky Jaguar](https://antxiko.github.io/SkyJaguar-disassembly/) | 16 | 211 | `suma_al_marcador` (0x43B2) = `SUMA_PUNTOS` |
+| [Yie Ar Kung-Fu II](https://antxiko.github.io/YieArKungFu2-disassembly/) | 16 | 145 | `avanza_la_cortinilla` (0x46F5) = `baja_un_paso` |
+| [Hyper Sports 3](https://antxiko.github.io/HyperSports3-disassembly/) | 14 | 154 | `manejador_de_interrupcion` (0x4043) |
+| [Konami's Boxing](https://antxiko.github.io/Boxing-disassembly/) | 13 | 118 | `avanza_el_guion` (0x7B35) = `repite_un_trozo` |
+| [Hyper Rally](https://antxiko.github.io/HyperRally-disassembly/) | 12 | 121 | `manejador_de_interrupcion` (0x4043) = `INT` |
+| [King's Valley](https://antxiko.github.io/KingsValley-disassembly/) | 12 | 141 | `suma_al_marcador` (0x43B2) |
+| [Konami's Ping Pong](https://antxiko.github.io/KonamisPingPong-disassembly/) | 12 | 111 | `avanza_la_cortinilla` (0x46F5) = `sube_el_rotulo` |
+
+The whole matrix, the 58 cartridges against each other, is on
+[The routines](https://antxiko.github.io/MSX-disassembly-database/THE-ROUTINES.html) in the series database, along
+with the method and the program that measures it.
